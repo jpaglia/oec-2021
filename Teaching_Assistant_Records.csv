@@ -1,7 +1,7 @@
-﻿TA Number,Last Name,First Name,Period 1 Class,Period 2 Class,Period 3 Class,Period 4 Class
-1,Haley,Burley,Philosophy A,Art A,Physics A,Drama B
-2,Robel,Daisha,Functions A,Humanities B,Computer Engineering A,Philosophy B
-3,Mayert,Yesenia,Functions B,Biology A,Art B,Physics A
-4,Bartoletti,Lavern,Drama A,Calculus A,Calculus B,Functions B
-5,Cruikshank,Lucas,Computer Science A,Physics B,Computer Science B,Calculus A
-6,O'Keefe,Angus,Computer Engineering B,Biology B,Humanities A,Art A
+﻿TA Number,Last Name,First Name,Period 1 Class,Period 2 Class,Period 3 Class,Period 4 Class,Phone Number
+1,Haley,Burley,Philosophy A,Art A,Physics A,Drama B,6473563546
+2,Robel,Daisha,Functions A,Humanities B,Computer Engineering A,Philosophy B,4162435465
+3,Mayert,Yesenia,Functions B,Biology A,Art B,Physics A,9052345678
+4,Bartoletti,Lavern,Drama A,Calculus A,Calculus B,Functions B,6473563546
+5,Cruikshank,Lucas,Computer Science A,Physics B,Computer Science B,Calculus A,4162435465
+6,O'Keefe,Angus,Computer Engineering B,Biology B,Humanities A,Art A,9052345678
