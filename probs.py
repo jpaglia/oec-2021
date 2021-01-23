@@ -1,7 +1,7 @@
 import itertools
 import heapq
-
-
+import df_ops
+import copy
 
 # Function to determine the probability of infection
 # Based on who is infected in the class
@@ -32,10 +32,12 @@ def update_with_factor(prev_probability, percent_increase):
   return new_prob
 
 
-def get_new_class_infection_probs(infected_set, unique_increase):
+def get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, class_name, period):
   # Steps of Algorithm
   # 1.) First get the base infection rate for an average student
   # 2.) Get the unique probability by increasing that amount by their specific conditions
+  teacher_infection = dfwrapper.get_teachers_for_class(class_name, period)
+  # Also have to consider teachers and TA's as well
   base_infection_amount = calculate_base_prob(infected_set)
   unique_infection_prob = []
   for index in range(0, len(infected_set)):

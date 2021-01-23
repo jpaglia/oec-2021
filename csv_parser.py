@@ -71,11 +71,10 @@ def main():
 			all_grades = [9, 10, 11, 12]
 			for grade in all_grades:
 				grade_list = dfwrapper.get_infections_in_lunch(grade)
-				print(grade_list)
 				student_ids = [i[0] for i in grade_list]
 				infected_set = [i[1] for i in grade_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfswrapper, 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 				
@@ -84,12 +83,12 @@ def main():
 			print('Processing After School')
 			# Unique logic for after school activities
 			all_activities = dfwrapper.get_extra_list()
-			for after_scool in all_activities:
-				after_scool_list = dfwrapper.get_infections_after_school(after_scool)
-				student_ids = [i[0] for i in after_scool_list]
-				infected_set = [i[1] for i in after_scool_list]
+			for after_school in all_activities:
+				after_school_list = dfwrapper.get_infections_after_school(after_school)
+				student_ids = [i[0] for i in after_school_list]
+				infected_set = [i[1] for i in after_school_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfswrapper, 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
@@ -102,7 +101,8 @@ def main():
 				student_ids = [i[0] for i in class_list]
 				infected_set = [i[1] for i in class_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase)
+
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, class_name, period)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
