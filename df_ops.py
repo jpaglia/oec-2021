@@ -102,7 +102,6 @@ class DfWrapper:
 		student_infection_list = []
 
 		for index, row in self.student_df.iterrows():
-			# rowindex = i - 1
 			infection_value = row[infection_col_name]
 			student_number = row['Student Number']
 			student_infection_list.append((student_number, infection_value))
@@ -114,7 +113,7 @@ class DfWrapper:
 		# Get infection rates from the column for period 2
 		infection_col_name = 'Infection Rate P2'
 
-		students_in_class = self.student_df.loc[self.student_df['Grade'] == str(grade)]
+		students_in_class = self.student_df.loc[self.student_df['Grade'] == grade]
 		student_list = students_in_class['Student Number'].values.tolist()
 
 		# Get the infection values for a specific period for a specific class
