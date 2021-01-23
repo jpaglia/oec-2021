@@ -106,6 +106,23 @@ class DfWrapper:
 
 		return student_infection_list
 
+	def get_infections_after_school(self, extracurricular):
+		# Get infection rates from the column for period 2
+		infection_col_name = 'Infection Rate P4'
+
+		students_after_school = self.student_df.loc[self.student_df['Extracurricular Activities'] == str(extracurricular)]
+		student_list = students_after_school['Student Number'].values.tolist()
+
+		# Get the infection values for a specific period for a specific class
+		student_infection_list = []
+
+		for i in student_list:
+			rowindex = i - 1
+			infection_value = self.student_df.at[rowindex, infection_col_name]
+			student_infection_list.append((i, infection_value))
+
+		return student_infection_list
+
 	def get_infections_in_class(self, classname, prev_period, curr_period):
 		# Shift col index based on period number
 

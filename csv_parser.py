@@ -67,7 +67,7 @@ def main():
 			# Special case for lunch logic
 			all_grades = [9, 10, 11, 12]
 			for grade in all_grades:
-				grade_list = dfwrapper.get_infections_in_lunch(grade, 2)
+				grade_list = dfwrapper.get_infections_in_lunch(grade)
 				student_ids = [i[0] for i in grade_list]
 				infected_set = [i[1] for i in grade_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
@@ -75,10 +75,10 @@ def main():
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
-		elif not(period == 3):
+		else:
 			all_classes = dfwrapper.get_class_list(period)
 			for class_name in all_classes:
-				class_list = dfwrapper.get_infections_in_class(class_name, prev_period)
+				class_list = dfwrapper.get_infections_in_class(class_name, prev_period, period)
 				student_ids = [i[0] for i in class_list]
 				infected_set = [i[1] for i in class_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
