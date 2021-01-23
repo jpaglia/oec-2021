@@ -62,6 +62,11 @@ class DfWrapper:
 		classes = self.student_df[period_col_header].tolist()
 		return classes
 
+	def get_extra_list(self):
+		activities = self.student_df['Extracurricular Activities'].tolist()
+		activities = list(set(activities))
+		return activities
+
 	# Updates infection % value for a certain student for a certain period
 	# `period` must be in {1, 2, 2.5, 3, 4, 5, 6}
 	# Where 2.5 => lunch, 5 => extra curriculars, and 6 => after school
@@ -88,11 +93,46 @@ class DfWrapper:
 		students_list = query['Student Number'].values.tolist()
 		return students_list
 
-	def get_infections_in_class(self, classname, period):
+	# Get all infections in period 2
+	def get_infections_in_lunch(self, grade):
+		# Get infection rates from the column for period 2
+		infection_col_name = 'Infection Rate P2'
+
+		students_in_class = self.student_df.loc[self.student_df['Grade'] == str(grade)]
+		student_list = students_in_class['Student Number'].values.tolist()
+
+		# Get the infection values for a specific period for a specific class
+		student_infection_list = []
+
+		for i in student_list:
+			rowindex = i - 1
+			infection_value = self.student_df.at[rowindex, infection_col_name]
+			student_infection_list.append((i, infection_value))
+
+		return student_infection_list
+
+	def get_infections_after_school(self, extracurricular):
+		# Get infection rates from the column for period 2
+		infection_col_name = 'Infection Rate P4'
+
+		students_after_school = self.student_df.loc[self.student_df['Extracurricular Activities'] == str(extracurricular)]
+		student_list = students_after_school['Student Number'].values.tolist()
+
+		# Get the infection values for a specific period for a specific class
+		student_infection_list = []
+
+		for i in student_list:
+			rowindex = i - 1
+			infection_value = self.student_df.at[rowindex, infection_col_name]
+			student_infection_list.append((i, infection_value))
+
+		return student_infection_list
+
+	def get_infections_in_class(self, classname, prev_period, curr_period):
 		# Shift col index based on period number
 
-		period_col_name = 'Period ' + str(period) + ' Class'
-		infection_col_name = 'Infection Rate P' + str(period)
+		period_col_name = 'Period ' + str(curr_period) + ' Class'
+		infection_col_name = 'Infection Rate P' + str(prev_period)
 
 		students_in_class = self.student_df.loc[self.student_df[period_col_name] == classname]
 		student_list = students_in_class['Student Number'].values.tolist()
@@ -144,5 +184,5 @@ class DfWrapper:
 
 			rate_increase_list.append(increase_value)
 
-		print(str(rate_increase_list))
+		# print(str(rate_increase_list))
 		return rate_increase_list
