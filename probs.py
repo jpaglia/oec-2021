@@ -48,4 +48,9 @@ def get_new_class_infection_probs(infected_set, unique_increase):
   return unique_infection_prob
 
 
-# def get_thresh_hold_infected(threshold, data):
+def get_thresh_hold_infected(threshold, infection_list):
+  data = 0
+  for student in infection_list:
+    if student > threshold:
+      data += 1
+  return data
