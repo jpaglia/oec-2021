@@ -75,6 +75,17 @@ def main():
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
+		elif period == 5:
+			all_after_school = # new function
+			for after_scool in all_activities:
+				grade_list = dfwrapper.get_infections_in_lunch(grade)
+				student_ids = [i[0] for i in grade_list]
+				infected_set = [i[1] for i in grade_list]
+				unique_increase = dfwrapper.get_rate_increase(student_ids)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase)
+				for i in range(0, len(new_probs)):
+					all_students[student_ids[i]-1] =  new_probs[i]
+			dfwrapper.update_infection_column(period, all_students)
 		else:
 			all_classes = dfwrapper.get_class_list(period)
 			for class_name in all_classes:
