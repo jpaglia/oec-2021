@@ -111,4 +111,22 @@ class DfWrapper:
 	def print_student_head(self):
 		print(self.student_df.head)
 
+	def get_rate_increase(self, student_list):
+		rate_increase_list = []
+		# Iterate through student list
+		for i in student_list:
+			rowindex = i - 1
+			increase_value = 1.0
 
+			grade_level = self.student_df.at[rowindex, "Grade"]
+			health_conditions = self.student_df.at[rowindex, "Health Conditions"]
+			
+			increase_value = increase_value + (0.25 * (grade_level - 9))
+			
+			if str(health_conditions) != "nan":
+				increase_value = increase_value + 0.7
+
+			rate_increase_list.append(increase_value)
+
+		print(str(rate_increase_list))
+		return rate_increase_list

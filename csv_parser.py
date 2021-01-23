@@ -40,7 +40,6 @@ import twilio_client as sms
 	
 	
 def main():
-
 	# PARSE THE STUDENT RECORDS
 	#csv_to_json(student_csv)
 	#print(result)
@@ -55,6 +54,8 @@ def main():
 	dfwrapper.update_infection_value(531, 1, 1.0)
 	dfwrapper.update_infection_value(86, 1, 1.0)
 	dfwrapper.update_infection_value(131, 1, 1.0)
+
+	dfwrapper.get_rate_increase([1, 2, 3, 12])
 
 	# dfwrapper.get_class_list(1)
 	# dfwrapper.get_student_activity(27)
