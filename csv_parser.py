@@ -47,17 +47,10 @@ def main():
 
 	dfwrapper = df_ops.DfWrapper(student_df, teacher_df, ta_df, zby1_df)
 
-<<<<<<< HEAD
-	# dfwrapper.printStudentHead()
-	# dfwrapper.getsiblings(3)
-	dfwrapper.get_class_list(1)
-=======
-	# dfwrapper.print_student_head()
-	# result = dfwrapper.get_people_in_class('Functions A', 1)
-	# print(result)
-
-	dfwrapper.get_same_grade_students(11)
->>>>>>> 5379b0d98cadf912d02ad82ac2bd454e6743a6c6
+	# dfwrapper.get_class_list(1)
+	# dfwrapper.get_same_grade_students(11)
+	dfwrapper.update_infection_value(1, 5, 0.6)
+	# dfwrapper.print_df_head()
 
 def create_dataframes():
 	# takes csv file name as arg[1]
