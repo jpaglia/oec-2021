@@ -83,4 +83,19 @@ class DfWrapper:
 
 		return student_list
 
+	def get_student_activity(self, studentid):
+		query = self.student_df.loc[self.student_df['Student Number'] == studentid]
+		activity_name = query['Extracurricular Activities'].values.tolist()[0]
+		print(activity_name)
+		return activity_name
+
+	def get_activity_students(self, activity_name):
+		query = self.student_df.loc[self.student_df['Extracurricular Activities'] == activity_name]
+		students_list = query['Student Number'].values.tolist()
+		print(students_list)
+		return students_list
+
+	def print_student_head(self):
+		print(self.student_df.head)
+
 
