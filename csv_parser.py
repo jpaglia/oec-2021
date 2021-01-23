@@ -73,7 +73,7 @@ def main():
 				student_ids = [i[0] for i in grade_list]
 				infected_set = [i[1] for i in grade_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, '', period)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfswrapper, 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 				
@@ -87,7 +87,7 @@ def main():
 				student_ids = [i[0] for i in after_school_list]
 				infected_set = [i[1] for i in after_school_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, '', period)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfswrapper, 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
@@ -100,7 +100,8 @@ def main():
 				student_ids = [i[0] for i in class_list]
 				infected_set = [i[1] for i in class_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, class_name, period)
+
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, class_name, period)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
