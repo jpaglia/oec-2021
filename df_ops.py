@@ -19,13 +19,13 @@ class DfWrapper:
 		self.zby1_df = zby1_df
 
 		# Add infection rate columns to student df
-		self.student_df['Infection Rate P1'] = 0
-		self.student_df['Infection Rate P2'] = 0 
-		self.student_df['Infection Rate P2.5'] = 0
-		self.student_df['Infection Rate P3'] = 0
-		self.student_df['Infection Rate P4'] = 0
-		self.student_df['Infection Rate P5'] = 0
-		self.student_df['Infection Rate P6'] = 0
+		self.student_df['Infection Rate P1'] = 0.0
+		self.student_df['Infection Rate P2'] = 0.0
+		self.student_df['Infection Rate P2.5'] = 0.0
+		self.student_df['Infection Rate P3'] = 0.0
+		self.student_df['Infection Rate P4'] = 0.0
+		self.student_df['Infection Rate P5'] = 0.0
+		self.student_df['Infection Rate P6'] = 0.0
 
 		# Print the resulting dataframe
 		print(str(self.student_df))
@@ -62,9 +62,12 @@ class DfWrapper:
 	def update_infection_value(self, studentid, period, value):
 		rowindex = studentid - 1
 		infection_col_name = 'Infection Rate P' + str(period)
-		print("col name:<{}>, value={}".format(infection_col_name, value))
-		self.student_df.at[rowindex, infection_col_name] = value
-		print(str(self.student_df.at[rowindex, infection_col_name]))
+		
+		self.student_df.at[rowindex, infection_col_name] = str(value)
+		
+		# print(self.student_df.head)
+		# print("Actual value:{}".format(str(self.student_df.at[rowindex, infection_col_name])))
+		# print("col name:<{}>, value={}".format(infection_col_name, value))
 
 	def print_df_head(self):
 		print(self.student_df.head)
