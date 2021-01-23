@@ -98,16 +98,14 @@ class DfWrapper:
 	
 		infection_col_name = 'Infection Rate P' + str(period)
 
-		students_in_period = self.student_df[infection_col_name]
-		student_list = students_in_period['Student Number'].values.tolist()
-
 		# Get the infection values for a specific period for a specific class
 		student_infection_list = []
 
-		for i in student_list:
+		for index, row in self.student_df.iterrows():
 			rowindex = i - 1
-			infection_value = self.student_df.at[rowindex, infection_col_name]
-			student_infection_list.append((i, infection_value))
+			infection_value = row[infection_col_name]
+			student_number = row['Student Number']
+			student_infection_list.append((student_number, infection_value))
 
 		return student_infection_list
 
@@ -184,6 +182,17 @@ class DfWrapper:
 
 	def print_student_head(self):
 		print(self.student_df.head)
+
+	def get_teachers_for_class(self, class_name, period):
+		period_header = 'Period ' + str(period) + ' Class'
+		query_teacher = self.teacher_df.loc[self.teacher_df['Class'] == class_name]
+		teacher_id = query_teacher['Teacher Number'].values.tolist()[0]
+		query_ta = self.ta_df.loc[self.ta_df[period_header] == class_name]
+		ta_id = query_ta['TA Number'].values.tolist()[0]
+		result_list = []
+		result_list.append(teacher_id)
+		result_list.append(ta_id)
+		return result_list
 
 	def get_rate_increase(self, student_list):
 		rate_increase_list = []
