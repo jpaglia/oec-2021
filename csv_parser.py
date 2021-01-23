@@ -56,18 +56,37 @@ def main():
 	dfwrapper.update_infection_value(131, 1, 1.0)
 	
 	#dfwrapper.update_infection_value(1, 5, 0.6)
-	for period in [1, 2, 3, 4]:
-		all_classes = dfwrapper.get_class_list(period)
+	period_arr = [2, 2.5, 3, 4]
+	for i in range(len(period_arr)):
+		period = period_arr[i]
+		prev_period = period_arr[i] - 1
 		all_students = [0] * SCHOOL_SIZE
-		for class_name in all_classes:
-			class_list = dfwrapper.get_infections_in_class(class_name, period)
-			student_ids = [i[0] for i in class_list]
-			infected_set = [i[1] for i in class_list]
-			unique_increase = dfwrapper.get_rate_increase(student_ids)
-			new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase)
-			for i in range(0, len(new_probs)):
-				all_students[student_ids[i]] =  new_probs[i]
-	
+		if period == 3:
+			prev_period = 2.5
+		if period == 2.5:
+			# Special case for lunch logic
+			all_grades = [9, 10, 11, 12]
+			for grade in all_grades:
+				grade_list = dfwrapper.get_infections_in_lunch(grade, 2)
+				student_ids = [i[0] for i in grade_list]
+				infected_set = [i[1] for i in grade_list]
+				unique_increase = dfwrapper.get_rate_increase(student_ids)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase)
+				for i in range(0, len(new_probs)):
+					all_students[student_ids[i]-1] =  new_probs[i]
+			dfwrapper.update_infection_column(period, all_students)
+		elif not(period == 3):
+			all_classes = dfwrapper.get_class_list(period)
+			for class_name in all_classes:
+				class_list = dfwrapper.get_infections_in_class(class_name, prev_period)
+				student_ids = [i[0] for i in class_list]
+				infected_set = [i[1] for i in class_list]
+				unique_increase = dfwrapper.get_rate_increase(student_ids)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase)
+				for i in range(0, len(new_probs)):
+					all_students[student_ids[i]-1] =  new_probs[i]
+			dfwrapper.update_infection_column(period, all_students)
+		print(dfwrapper.student_df)
 	# dfwrapper.get_class_list(1)
 	# dfwrapper.get_student_activity(27)
 	# dfwrapper.get_activity_students("Band")
