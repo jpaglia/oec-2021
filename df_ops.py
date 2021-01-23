@@ -93,12 +93,27 @@ class DfWrapper:
 		students_list = query['Student Number'].values.tolist()
 		return students_list
 
+	def get_infections_in_period(self, period):
+	# Shift col index based on period number
+	
+		infection_col_name = 'Infection Rate P' + str(period)
+
+		# Get the infection values for a specific period for a specific class
+		student_infection_list = []
+
+		for index, row in self.student_df.iterrows():
+			infection_value = row[infection_col_name]
+			student_number = row['Student Number']
+			student_infection_list.append((student_number, infection_value))
+
+		return student_infection_list
+
 	# Get all infections in period 2
 	def get_infections_in_lunch(self, grade):
 		# Get infection rates from the column for period 2
 		infection_col_name = 'Infection Rate P2'
 
-		students_in_class = self.student_df.loc[self.student_df['Grade'] == str(grade)]
+		students_in_class = self.student_df.loc[self.student_df['Grade'] == grade]
 		student_list = students_in_class['Student Number'].values.tolist()
 
 		# Get the infection values for a specific period for a specific class
@@ -166,6 +181,20 @@ class DfWrapper:
 
 	def print_student_head(self):
 		print(self.student_df.head)
+
+	def get_teachers_for_class(self, class_name, period):
+		if (class_name != ''):
+			period_header = 'Period ' + str(period) + ' Class'
+			query_teacher = self.teacher_df.loc[self.teacher_df['Class'] == class_name]
+			teacher_id = query_teacher['Teacher Number'].values.tolist()[0]
+			query_ta = self.ta_df.loc[self.ta_df[period_header] == class_name]
+			ta_id = query_ta['TA Number'].values.tolist()[0]
+			result_list = []
+			result_list.append(teacher_id)
+			result_list.append(ta_id)
+			return result_list
+		else:
+			return []
 
 	def get_rate_increase(self, student_list):
 		rate_increase_list = []
