@@ -69,6 +69,11 @@ class DfWrapper:
 		# print("Actual value:{}".format(str(self.student_df.at[rowindex, infection_col_name])))
 		# print("col name:<{}>, value={}".format(infection_col_name, value))
 
+	# Updates infection % value for an entire column for a specific period
+	def update_infection_column(self, period, column):
+		infection_col_name = 'Infection Rate P' + str(period)
+		self.student_df[infection_col_name] = column
+
 	def print_df_head(self):
 		print(self.student_df.head)
 
