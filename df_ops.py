@@ -98,16 +98,14 @@ class DfWrapper:
 	
 		infection_col_name = 'Infection Rate P' + str(period)
 
-		students_in_period = self.student_df[infection_col_name]
-		student_list = students_in_period['Student Number'].values.tolist()
-
 		# Get the infection values for a specific period for a specific class
 		student_infection_list = []
 
-		for i in student_list:
+		for index, row in self.student_df.iterrows():
 			rowindex = i - 1
-			infection_value = self.student_df.at[rowindex, infection_col_name]
-			student_infection_list.append((i, infection_value))
+			infection_value = row[infection_col_name]
+			student_number = row['Student Number']
+			student_infection_list.append((student_number, infection_value))
 
 		return student_infection_list
 
