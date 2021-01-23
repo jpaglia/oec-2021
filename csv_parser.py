@@ -48,8 +48,7 @@ def main():
 	student_df, teacher_df, ta_df, zby1_df = create_dataframes()
 
 	dfwrapper = df_ops.DfWrapper(student_df, teacher_df, ta_df, zby1_df)
-
-
+	
 	# Insert initial infections
 	dfwrapper.update_infection_value(531, 1, 1.0)
 	dfwrapper.update_infection_value(86, 1, 1.0)
@@ -91,6 +90,8 @@ def main():
 	# dfwrapper.get_student_activity(27)
 	# dfwrapper.get_activity_students("Band")
 	# dfwrapper.get_same_grade_students(11)
+	#dfwrapper.get_teachers_for_class('Physics A', 3)
+
 
 def create_dataframes():
 	# takes csv file name as arg[1]
