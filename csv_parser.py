@@ -74,7 +74,7 @@ def main():
 				student_ids = [i[0] for i in grade_list]
 				infected_set = [i[1] for i in grade_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfswrapper, 0, 0)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 				
@@ -88,7 +88,7 @@ def main():
 				student_ids = [i[0] for i in after_school_list]
 				infected_set = [i[1] for i in after_school_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfswrapper, 0, 0)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
@@ -112,6 +112,7 @@ def main():
 		current_infections.append(probs.get_thresh_hold_infected(threshold, infection_list))
 		
 	print(current_infections)
+	dfwrapper.get_eod_infections()
 
 def create_dataframes():
 	# takes csv file name as arg[1]
