@@ -48,7 +48,8 @@ def main():
 
 	dfwrapper = df_ops.DfWrapper(student_df, teacher_df, ta_df, zby1_df)
 
-	dfwrapper.update_infection_value(1, 5, 0.6)
+	# dfwrapper.update_infection_value(1, 5, 0.6)
+	dfwrapper.get_people_in_class("Functions A", 1)
 	# dfwrapper.get_class_list(1)
 	# dfwrapper.get_student_activity(27)
 	# dfwrapper.get_activity_students("Band")

@@ -77,25 +77,36 @@ class DfWrapper:
 		students_list = query['Student Number'].values.tolist()
 		return students_list
 
-	def get_people_in_class(self, classname, period):
+	def get_infections_in_class(self, classname, period):
 		# Shift col index based on period number
-		# colindex = int(period) + 3
+
 		period_col_name = 'Period ' + str(period) + ' Class'
+		infection_col_name = 'Infection Rate P' + str(period)
+
 		students_in_class = self.student_df.loc[self.student_df[period_col_name] == classname]
 		student_list = students_in_class['Student Number'].values.tolist()
 
-		return student_list
+		# Get the infection values for a specific period for a specific class
+		student_infection_list = []
+
+		for i in student_list:
+			rowindex = i - 1
+			infection_value = self.student_df.at[rowindex, infection_col_name]
+			student_infection_list.append((i, infection_value))
+
+		# print(str(student_infection_list))
+		return student_infection_list
 
 	def get_student_activity(self, studentid):
 		query = self.student_df.loc[self.student_df['Student Number'] == studentid]
 		activity_name = query['Extracurricular Activities'].values.tolist()[0]
-		print(activity_name)
+		# print(activity_name)
 		return activity_name
 
 	def get_activity_students(self, activity_name):
 		query = self.student_df.loc[self.student_df['Extracurricular Activities'] == activity_name]
 		students_list = query['Student Number'].values.tolist()
-		print(students_list)
+		# print(students_list)
 		return students_list
 
 	def print_student_head(self):
