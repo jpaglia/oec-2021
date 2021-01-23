@@ -62,6 +62,11 @@ class DfWrapper:
 		classes = self.student_df[period_col_header].tolist()
 		return classes
 
+	def get_extra_list(self):
+		activities = self.student_df['Extracurricular Activities'].tolist()
+		activities = list(set(activities))
+		return activities
+
 	# Updates infection % value for a certain student for a certain period
 	# `period` must be in {1, 2, 2.5, 3, 4, 5, 6}
 	# Where 2.5 => lunch, 5 => extra curriculars, and 6 => after school
