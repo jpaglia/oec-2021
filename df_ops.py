@@ -23,7 +23,7 @@ class DfWrapper:
 	# all people in grade X
 	# all people in class C for period Y
 
-	def getsiblings(self, studentid):
+	def get_siblings(self, studentid):
 		rowindex = studentid - 1
 		lastname = self.student_df.iat[rowindex, 1]
 		
@@ -32,7 +32,16 @@ class DfWrapper:
 		siblings_list.remove(studentid)
 		return siblings_list
 
-	def printStudentHead(self):
+	def get_people_in_class(self, classname, period):
+		# Shift col index based on period number
+		colindex = int(period) + 3
+		period_col_name = 'Period ' + str(period) + ' Class'
+		students_in_class = self.student_df.loc[self.student_df[period_col_name] == classname]
+		student_list = students_in_class['Student Number'].values.tolist()
+
+		return student_list
+
+	def print_student_head(self):
 		print(self.student_df.head)
 
 
