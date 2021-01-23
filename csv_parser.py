@@ -99,7 +99,6 @@ def main():
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
-		
 		# Get current Data
 		threshold = 0.5
 		infection_list = dfwrapper.get_infections_in_period(period)
@@ -107,6 +106,10 @@ def main():
 		
 	print(current_infections)
 
+	# dfwrapper.get_class_list(1)
+	# dfwrapper.get_student_activity(27)
+	# dfwrapper.get_activity_students("Band")
+	# dfwrapper.get_same_grade_students(11)
 
 def create_dataframes():
 	# takes csv file name as arg[1]
