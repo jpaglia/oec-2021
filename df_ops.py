@@ -34,7 +34,7 @@ class DfWrapper:
 		self.teacher_df['Infection Rate P4'] = 0.0
 
 		# Print the resulting dataframe
-		print(str(self.student_df))
+		# print(str(self.student_df))
 
 	# sibilings of person X
 	# common classes of person X in period Y
