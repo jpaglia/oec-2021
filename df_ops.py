@@ -106,11 +106,11 @@ class DfWrapper:
 
 		return student_infection_list
 
-	def get_infections_in_class(self, classname, period):
+	def get_infections_in_class(self, classname, prev_period, curr_period):
 		# Shift col index based on period number
 
-		period_col_name = 'Period ' + str(period) + ' Class'
-		infection_col_name = 'Infection Rate P' + str(period)
+		period_col_name = 'Period ' + str(curr_period) + ' Class'
+		infection_col_name = 'Infection Rate P' + str(prev_period)
 
 		students_in_class = self.student_df.loc[self.student_df[period_col_name] == classname]
 		student_list = students_in_class['Student Number'].values.tolist()
