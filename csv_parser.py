@@ -8,6 +8,7 @@ import numpy as np
 import df_ops
 import twilio_client as sms
 import probs
+import matplotlib.pyplot as plt
 
 # def plot_from_csv(filename):
 # 	csv_data = pd.read_csv(filename)
@@ -148,7 +149,11 @@ def notify_sms(infected_set):
 		msg = 'Hello ' + patient.get('first_name') + '. You may have been exposed to ZBY1. There is a ' + str('') + ' chance that you have been infected.'
 		# NOTE: Only the phone number for Sean Klocko (SN #1) will be notified, as it is the only registered number in the free trial
 		try:
-			client.messages.create(to='+1'+phone_num, from_=sms.TRIAL_NUMBER, body=msg)
+			# FOR THE PURPOSE OF THIS DEMO, WE CAN ONLY TEXT 1 PHONE NUMBER
+			# THIS IS THE ONLY REASON WE HAVE THIS CONDITIONAL STATEMENT IN PLACE
+			if (phone_num == '6472341162'):
+				client.messages.create(to='+1'+phone_num, from_=sms.TRIAL_NUMBER, body=msg)
+				break
 		except Exception as e:
 			print('Student number is not included in the scope of the Twilio free trial') 
 

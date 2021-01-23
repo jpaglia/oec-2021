@@ -33,6 +33,12 @@ class DfWrapper:
 		self.teacher_df['Infection Rate P3'] = 0.0
 		self.teacher_df['Infection Rate P4'] = 0.0
 
+		# Add infection rate columns to teacher df
+		self.ta_df['Infection Rate P1'] = 0.0
+		self.ta_df['Infection Rate P2'] = 0.0
+		self.ta_df['Infection Rate P3'] = 0.0
+		self.ta_df['Infection Rate P4'] = 0.0
+
 		# Print the resulting dataframe
 		# print(str(self.student_df))
 
@@ -51,6 +57,38 @@ class DfWrapper:
 		siblings_list.remove(studentid)
 
 		return siblings_list
+
+	def get_eod_infections(self):	
+		extra_col_name = 'Infection Rate P5'
+		last_col_name = 'Infection Rate P4'
+
+		# Get the infection values for a specific period for a specific class
+		entire_infection_list = []
+
+		# 1. Add student entries to the infection list
+		for _, row in self.student_df.iterrows():
+			infection_value = row[last_col_name]
+			if str(row[extra_col_name]) != "nan":
+				infection_value = row[extra_col_name]
+			
+			student_number = row['Student Number']
+			entire_infection_list.append((student_number, infection_value, "student"))
+
+		# 2. Add Teacher entries to the infection list
+		for _, row in self.teacher_df.iterrows():
+			infection_value = row[last_col_name]
+			
+			teacher_number = row['Teacher Number']
+			entire_infection_list.append((teacher_number, infection_value, "teacher"))
+
+		# 3. Add Teaching Assistant entries to the infection list
+		for _, row in self.ta_df.iterrows():
+			infection_value = row[last_col_name]
+			
+			ta_number = row['TA Number']
+			entire_infection_list.append((ta_number, infection_value, "teaching assistant"))
+
+		return entire_infection_list
 
 	# Get a list of all the classes within a period `period`
 	# `period` must be in {1,2,3,4}
