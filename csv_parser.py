@@ -106,9 +106,8 @@ def main():
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
 		# Get current Data
-		threshold = 0.01
+		threshold = 0.13
 		infection_list = dfwrapper.get_infections_in_period(period)
-		print(infection_list)
 		current_infections.append(probs.get_thresh_hold_infected(threshold, infection_list))
 		
 	print(current_infections)
