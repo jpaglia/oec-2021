@@ -54,6 +54,12 @@ def main():
 	dfwrapper.update_infection_value(531, 1, 1.0)
 	dfwrapper.update_infection_value(86, 1, 1.0)
 	dfwrapper.update_infection_value(131, 1, 1.0)
+<<<<<<< HEAD
+
+	#dfwrapper.get_rate_increase([1, 2, 3, 12])
+	dfwrapper.get_teacher_infection_rate('Physics A', 'Infection Rate P1')
+
+=======
 	
 	#dfwrapper.update_infection_value(1, 5, 0.6)
 	period_arr = [2, 2.5, 3, 4]
@@ -87,6 +93,7 @@ def main():
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
 		print(dfwrapper.student_df)
+>>>>>>> b9d08af9ba251a70d0606ab57b84625431fd0497
 	# dfwrapper.get_class_list(1)
 	# dfwrapper.get_student_activity(27)
 	# dfwrapper.get_activity_students("Band")

@@ -177,6 +177,11 @@ class DfWrapper:
 		# print(students_list)
 		return students_list
 
+	def get_teacher_infection_rate(self, class_name, period_name):
+		query = self.teacher_df.loc[self.teacher_df['Class'] == class_name]
+		infection_rate = query[period_name].values.tolist()[0]
+		return infection_rate
+
 	def print_student_head(self):
 		print(self.student_df.head)
 
