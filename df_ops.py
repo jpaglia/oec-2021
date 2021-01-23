@@ -94,7 +94,6 @@ class DfWrapper:
 			infection_value = self.student_df.at[rowindex, infection_col_name]
 			student_infection_list.append((i, infection_value))
 
-		# print(str(student_infection_list))
 		return student_infection_list
 
 	def get_student_activity(self, studentid):
