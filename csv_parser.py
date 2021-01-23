@@ -8,6 +8,7 @@ import numpy as np
 import df_ops
 import twilio_client as sms
 import probs
+import matplotlib.pyplot as plt
 
 # def plot_from_csv(filename):
 # 	csv_data = pd.read_csv(filename)
