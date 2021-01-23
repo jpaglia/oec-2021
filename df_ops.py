@@ -27,6 +27,12 @@ class DfWrapper:
 		self.student_df['Infection Rate P5'] = 0.0
 		self.student_df['Infection Rate P6'] = 0.0
 
+		# Add infection rate columns to teacher df
+		self.teacher_df['Infection Rate P1'] = 0.0
+		self.teacher_df['Infection Rate P2'] = 0.0
+		self.teacher_df['Infection Rate P3'] = 0.0
+		self.teacher_df['Infection Rate P4'] = 0.0
+
 		# Print the resulting dataframe
 		print(str(self.student_df))
 
