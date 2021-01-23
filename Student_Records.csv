@@ -1,0 +1,1000 @@
+﻿Student Number,Last Name,First Name,Grade,Period 1 Class,Period 2 Class,Period 3 Class,Period 4 Class,Health Conditions,Extracurricular Activities
+1,Klocko,Sean,11,Functions A,Art B,Drama A,Philosophy B,N/A,Board Game Club
+2,Effertz,Lulu,12,Biology B,Drama B,Computer Engineering A,Computer Science B,N/A,N/A
+3,Kozey,Rocky,12,Computer Science B,Philosophy A,Biology B,Drama A,N/A,N/A
+4,Feest,Monica,11,Drama B,Humanities B,Computer Engineering B,Physics B,N/A,N/A
+5,Mann,Kaitlin,12,Biology A,Drama B,Philosophy A,Physics A,N/A,N/A
+6,Ziemann,Ayla,12,Drama A,Computer Science A,Physics B,Calculus B,N/A,N/A
+7,Schulist,Zion,10,Art A,Physics B,Functions A,Humanities B,N/A,Board Game Club
+8,Morar,Alaina,11,Functions A,Art A,Computer Science B,Humanities A,N/A,N/A
+9,Glover,Aidan,12,Computer Science A,Computer Engineering A,Functions B,Humanities B,N/A,N/A
+10,Johnston,Leann,10,Art A,Philosophy B,Functions A,Biology A,N/A,N/A
+11,Buckridge,Shyann,11,Calculus A,Drama B,Philosophy B,Physics B,N/A,N/A
+12,Ankunding,Dortha,9,Philosophy A,Computer Science B,Physics B,Biology B,Asthma,N/A
+13,Lehner,Kevon,10,Biology A,Drama A,Computer Science A,Calculus A,N/A,N/A
+14,Littel,Rae,11,Computer Science A,Drama A,Physics B,Humanities A,N/A,Football
+15,Aufderhar,Cletus,9,Physics B,Art A,Humanities A,Drama B,N/A,N/A
+16,DuBuque,Derek,11,Philosophy A,Humanities B,Computer Engineering A,Computer Science A,N/A,N/A
+17,Becker,Danyka,9,Art A,Computer Engineering A,Computer Science A,Drama A,N/A,N/A
+18,Wintheiser,Lynn,10,Computer Science A,Biology B,Drama B,Computer Engineering B,N/A,N/A
+19,Schmidt,Lambert,11,Art A,Physics B,Philosophy B,Drama A,N/A,N/A
+20,McGlynn,Marcelle,10,Art A,Physics A,Philosophy B,Functions B,N/A,N/A
+21,Zulauf,Gregorio,10,Functions B,Biology B,Humanities A,Calculus A,N/A,N/A
+22,Lindgren,Rahul,11,Physics B,Philosophy A,Functions A,Humanities B,N/A,N/A
+23,Carter,Alison,12,Philosophy B,Functions A,Computer Science A,Computer Engineering A,N/A,N/A
+24,Zboncak,Skyla,11,Computer Engineering B,Drama B,Physics B,Art A,N/A,N/A
+25,Stamm,Rebekah,9,Physics B,Art A,Computer Engineering A,Calculus A,N/A,Soccer
+26,Keebler,Reina,10,Computer Engineering B,Drama A,Biology B,Philosophy B,N/A,N/A
+27,Buckridge,Liza,9,Computer Science B,Computer Engineering B,Drama A,Biology B,N/A,"Band,Computer Science Club,Video Game Club"
+28,Schinner,Arjun,9,Humanities A,Calculus B,Computer Engineering A,Physics B,N/A,N/A
+29,Bartell,Dora,9,Biology A,Humanities B,Philosophy A,Functions B,N/A,N/A
+30,Nicolas,Marjolaine,9,Computer Engineering B,Humanities B,Computer Science B,Calculus A,N/A,N/A
+31,Zemlak,Garrick,11,Humanities A,Philosophy B,Drama A,Art A,N/A,N/A
+32,Mosciski,Otto,12,Calculus B,Drama B,Biology B,Humanities B,N/A,N/A
+33,Corkery,Thomas,12,Drama B,Computer Engineering B,Physics B,Philosophy B,N/A,N/A
+34,Hackett,Karl,11,Calculus B,Art B,Computer Engineering B,Biology A,Diabetes,Video Game Club
+35,Bednar,Marisol,12,Physics A,Humanities B,Biology B,Functions B,N/A,N/A
+36,Haley,Adaline,9,Drama A,Physics A,Computer Engineering A,Biology B,N/A,N/A
+37,Krajcik,Marjory,10,Philosophy B,Calculus A,Art A,Computer Science B,N/A,N/A
+38,Emmerich,Webster,10,Calculus B,Biology A,Computer Science B,Functions A,N/A,N/A
+39,Raynor,Amelie,11,Biology B,Humanities B,Calculus A,Computer Engineering A,N/A,N/A
+40,Wiza,Hillary,11,Functions A,Biology B,Computer Science A,Calculus A,N/A,N/A
+41,Weimann,Clara,10,Humanities B,Drama B,Physics A,Philosophy B,N/A,N/A
+42,Goodwin,Antonina,12,Drama B,Art A,Biology A,Philosophy B,N/A,N/A
+43,Batz,Stan,10,Humanities A,Calculus A,Philosophy B,Physics A,N/A,N/A
+44,Hackett,Loy,10,Humanities B,Physics B,Drama B,Functions B,N/A,N/A
+45,Kemmer,Fay,10,Humanities B,Biology B,Drama B,Computer Engineering A,N/A,N/A
+46,Hilll,Alvena,11,Computer Science B,Drama A,Calculus A,Functions A,N/A,N/A
+47,Monahan,Presley,10,Art B,Humanities B,Drama B,Philosophy B,N/A,N/A
+48,Rutherford,Robin,12,Computer Engineering A,Biology B,Drama B,Physics B,N/A,N/A
+49,Trantow,Jarret,11,Functions A,Humanities B,Computer Engineering A,Drama A,N/A,N/A
+50,Blick,Sabina,11,Biology A,Computer Science B,Physics B,Calculus A,N/A,N/A
+51,Beahan,Eve,9,Drama A,Computer Science A,Biology A,Functions B,N/A,N/A
+52,Kuhlman,Hester,12,Physics A,Computer Engineering B,Philosophy A,Art B,N/A,Soccer
+53,Murazik,Trever,9,Humanities B,Physics B,Functions B,Philosophy A,N/A,N/A
+54,Tremblay,Josefina,10,Humanities B,Drama A,Functions B,Computer Science B,N/A,N/A
+55,Kassulke,Cornell,9,Functions B,Calculus B,Humanities A,Physics B,N/A,N/A
+56,Keebler,Holly,10,Philosophy B,Computer Science A,Art A,Humanities B,N/A,Soccer
+57,Metz,Maureen,11,Art A,Biology B,Calculus B,Computer Science A,N/A,N/A
+58,Hettinger,Elvera,10,Philosophy A,Physics A,Functions A,Computer Engineering A,N/A,N/A
+59,Hettinger,Lourdes,10,Philosophy B,Biology B,Computer Science A,Art B,N/A,N/A
+60,Mraz,Arturo,10,Calculus A,Humanities B,Art B,Physics B,N/A,N/A
+61,Bartell,Annabelle,10,Functions B,Philosophy B,Drama B,Humanities A,N/A,N/A
+62,Stracke,Philip,10,Calculus B,Art B,Functions B,Philosophy B,N/A,N/A
+63,Fritsch,Ansley,11,Functions A,Drama B,Computer Science B,Art A,N/A,Computer Science Club
+64,Pfannerstill,Amanda,9,Physics B,Philosophy A,Drama A,Functions B,N/A,"Board Game Club,Basketball"
+65,Marquardt,Susie,9,Computer Science A,Functions A,Philosophy A,Physics A,N/A,Football
+66,Dicki,Theresia,9,Physics B,Humanities A,Biology A,Philosophy B,N/A,Football
+67,Carter,Octavia,11,Biology A,Computer Science B,Calculus B,Functions B,N/A,N/A
+68,D'Amore,Roman,11,Physics A,Computer Engineering A,Calculus A,Computer Science A,N/A,N/A
+69,Kessler,Kirsten,11,Art A,Physics A,Computer Engineering A,Philosophy B,N/A,"Band,Video Game Club,Choir"
+70,Durgan,Kelly,9,Drama B,Calculus B,Computer Science A,Biology A,N/A,N/A
+71,Wisozk,Michael,9,Humanities B,Functions A,Computer Science B,Physics A,N/A,N/A
+72,Kris,Emmie,11,Biology B,Calculus A,Drama B,Computer Science B,N/A,N/A
+73,Kozey,Mozell,10,Computer Engineering B,Philosophy A,Art A,Functions B,N/A,N/A
+74,Zieme,Jennie,11,Philosophy A,Humanities B,Physics B,Biology B,N/A,N/A
+75,Murray,Janie,12,Drama B,Computer Science B,Philosophy A,Computer Engineering B,N/A,N/A
+76,Murphy,Percival,9,Calculus A,Art A,Physics A,Drama B,N/A,N/A
+77,Daugherty,Michele,10,Biology B,Physics A,Philosophy B,Calculus A,N/A,Computer Science Club
+78,Hyatt,Mireya,12,Philosophy A,Biology B,Calculus B,Computer Science B,N/A,N/A
+79,Hartmann,Henriette,11,Computer Science A,Philosophy B,Humanities A,Biology B,N/A,N/A
+80,Marquardt,Will,10,Functions B,Biology B,Calculus B,Drama B,N/A,N/A
+81,Cole,Owen,12,Functions A,Art B,Biology B,Computer Science B,N/A,N/A
+82,Paucek,Talon,12,Computer Engineering A,Calculus A,Art B,Humanities A,N/A,N/A
+83,Walker,Stone,12,Computer Science A,Art B,Biology B,Humanities A,N/A,N/A
+84,Robel,Erwin,11,Computer Engineering B,Humanities B,Art A,Computer Science A,N/A,"Soccer,Choir"
+85,Jacobson,Charlie,10,Computer Engineering B,Biology B,Art A,Physics A,N/A,N/A
+86,Cookie,Jory,11,Art A,Drama B,Biology A,Computer Engineering B,N/A,"Choir,Band,Board Game Club"
+87,O'Hara,Haleigh,12,Humanities A,Calculus A,Art B,Computer Science A,N/A,N/A
+88,Kovacek,Don,12,Humanities B,Computer Engineering A,Physics B,Philosophy B,N/A,N/A
+89,Botsford,Keyshawn,10,Biology B,Drama A,Computer Science A,Humanities A,N/A,N/A
+90,Rogahn,Dejuan,10,Humanities A,Philosophy A,Calculus A,Computer Science B,N/A,N/A
+91,Gorczany,Tamara,9,Computer Engineering A,Philosophy B,Functions B,Calculus B,N/A,N/A
+92,Ruecker,Damion,9,Functions A,Calculus A,Humanities A,Drama A,Immunocompromised,N/A
+93,Wisoky,Maximillian,12,Calculus B,Humanities B,Art B,Drama B,N/A,N/A
+94,Gulgowski,Ola,12,Computer Engineering B,Functions A,Computer Science A,Philosophy B,N/A,N/A
+95,Schultz,Rodrick,11,Art A,Drama A,Functions A,Humanities B,N/A,N/A
+96,Zulauf,Sierra,10,Humanities B,Philosophy A,Calculus B,Computer Science A,N/A,N/A
+97,Barton,Janiya,9,Computer Engineering B,Drama A,Computer Science B,Functions A,N/A,N/A
+98,Larkin,Lupe,9,Art B,Biology A,Humanities B,Calculus A,N/A,N/A
+99,Ernser,Callie,12,Art A,Philosophy A,Functions B,Biology B,N/A,N/A
+100,Conroy,Ava,12,Drama A,Computer Engineering A,Functions B,Biology B,N/A,N/A
+101,Olson,Demarcus,9,Art B,Physics A,Calculus B,Philosophy A,N/A,N/A
+102,Jacobs,Clarabelle,9,Art B,Drama B,Functions A,Humanities A,N/A,Badminton
+103,Connelly,Salvatore,10,Physics A,Humanities A,Computer Science A,Art B,N/A,N/A
+104,Sanford,Trace,10,Art B,Computer Science B,Calculus A,Humanities B,N/A,N/A
+105,Gleason,Eliseo,11,Drama A,Computer Engineering B,Physics B,Philosophy B,N/A,Basketball
+106,Kozey,Rosalinda,11,Physics A,Functions B,Art A,Drama A,N/A,N/A
+107,Hegmann,Amalia,11,Philosophy A,Drama A,Computer Engineering B,Humanities A,N/A,Baseball
+108,Larkin,Leatha,10,Calculus A,Computer Engineering A,Functions A,Art A,N/A,N/A
+109,Fay,Clint,12,Art A,Drama A,Physics A,Philosophy B,N/A,N/A
+110,Davis,Bernice,10,Physics A,Art A,Philosophy A,Computer Science A,N/A,N/A
+111,Howe,Loyal,12,Physics A,Functions B,Computer Science A,Philosophy A,N/A,N/A
+112,Effertz,Jeramy,10,Physics A,Biology B,Computer Engineering A,Humanities A,N/A,N/A
+113,Medhurst,Ressie,10,Computer Engineering B,Philosophy A,Drama A,Calculus A,N/A,N/A
+114,Anderson,Thurman,10,Humanities B,Computer Engineering B,Functions A,Biology B,N/A,Soccer
+115,Bashirian,Robbie,9,Physics A,Computer Engineering B,Computer Science A,Functions A,N/A,N/A
+116,Nienow,Alycia,11,Art A,Philosophy B,Physics A,Calculus B,N/A,N/A
+117,Morar,Lorine,9,Calculus B,Drama B,Biology A,Philosophy B,N/A,N/A
+118,Morissette,Rahul,9,Art A,Humanities A,Calculus B,Philosophy B,N/A,N/A
+119,Fay,Kaitlyn,12,Art A,Philosophy B,Computer Engineering B,Drama A,Asthma,N/A
+120,Rice,Floyd,12,Calculus B,Art A,Computer Engineering A,Computer Science B,N/A,Basketball
+121,Flatley,Jordon,10,Physics B,Functions A,Computer Science A,Philosophy B,N/A,N/A
+122,Wunsch,Lonzo,9,Physics A,Computer Science B,Functions B,Computer Engineering A,N/A,N/A
+123,Kihn,Antonia,10,Calculus B,Art B,Physics A,Computer Science A,N/A,N/A
+124,Hansen,Gianni,10,Physics A,Drama A,Calculus B,Biology A,N/A,"Football,Video Game Club"
+125,Bradtke,Rickie,11,Calculus A,Computer Science A,Philosophy B,Functions B,N/A,N/A
+126,O'Conner,Maude,11,Philosophy A,Functions B,Computer Engineering B,Biology A,N/A,N/A
+127,Kiehn,Bradley,10,Computer Engineering A,Computer Science A,Drama B,Physics A,N/A,N/A
+128,Larson,Ruben,9,Humanities A,Art B,Philosophy B,Calculus B,N/A,N/A
+129,Koepp,Bennie,9,Functions B,Philosophy A,Drama B,Computer Science B,N/A,"Video Game Club,Soccer,Choir"
+130,Blick,Mertie,10,Computer Engineering A,Functions B,Philosophy A,Art B,N/A,N/A
+131,Dickinson,Lewis,10,Physics B,Computer Science B,Art B,Functions A,N/A,"Video Game Club,Soccer,Basketball"
+132,Batz,Lilla,9,Art B,Computer Engineering B,Humanities A,Calculus A,N/A,N/A
+133,Nolan,Evelyn,9,Computer Engineering A,Functions A,Art B,Physics A,N/A,N/A
+134,Huel,Lou,9,Philosophy A,Calculus A,Humanities B,Physics A,N/A,Basketball
+135,Rath,Elvie,11,Drama A,Computer Engineering A,Calculus A,Functions B,N/A,Badminton
+136,Stiedemann,Camilla,11,Biology B,Physics B,Computer Science A,Calculus B,N/A,N/A
+137,Dietrich,Milo,12,Philosophy A,Physics A,Functions A,Computer Engineering A,N/A,N/A
+138,Schultz,Garrison,10,Computer Science B,Physics A,Drama A,Humanities A,N/A,Soccer
+139,Yost,Mona,9,Functions B,Computer Science A,Art B,Computer Engineering B,N/A,N/A
+140,Waelchi,Bradley,12,Drama A,Biology B,Calculus A,Functions A,N/A,N/A
+141,Cummings,Jana,9,Physics B,Humanities B,Computer Science A,Drama A,Asthma,N/A
+142,O'Connell,Nat,10,Calculus A,Functions A,Philosophy B,Computer Science A,Diabetes,N/A
+143,Will,Alejandra,9,Drama A,Biology A,Art A,Calculus B,N/A,Baseball
+144,Torphy,Sanford,10,Biology B,Computer Engineering A,Drama A,Physics B,N/A,N/A
+145,Osinski,Bernie,10,Art A,Computer Science A,Functions A,Humanities B,N/A,N/A
+146,Murray,Genesis,11,Philosophy B,Humanities A,Computer Science A,Calculus B,N/A,N/A
+147,Hills,Alexandrea,12,Computer Engineering B,Calculus A,Functions A,Computer Science A,N/A,N/A
+148,Davis,Hollis,9,Calculus A,Art B,Computer Engineering B,Physics A,N/A,N/A
+149,Roberts,Abraham,12,Computer Science A,Drama A,Art A,Physics A,N/A,N/A
+150,Cole,Mona,9,Functions A,Computer Science B,Art A,Physics A,N/A,Drama Club
+151,Pfeffer,Freida,10,Physics B,Art A,Humanities A,Biology A,Asthma,N/A
+152,O'Connell,Willard,11,Philosophy A,Computer Science B,Functions B,Drama A,N/A,N/A
+153,Wilkinson,Conrad,12,Calculus A,Art B,Physics A,Philosophy A,N/A,N/A
+154,Strosin,Mariah,10,Functions B,Calculus A,Art A,Philosophy A,N/A,N/A
+155,DuBuque,Lempi,12,Physics B,Drama A,Calculus B,Humanities B,N/A,N/A
+156,Rosenbaum,Caitlyn,10,Drama B,Physics A,Computer Engineering A,Calculus A,N/A,N/A
+157,Collier,Colby,10,Biology B,Physics A,Computer Engineering B,Calculus B,N/A,N/A
+158,Dibbert,Hollis,10,Functions A,Humanities A,Computer Science B,Calculus B,N/A,N/A
+159,Hoppe,Myrtie,11,Computer Engineering A,Art A,Humanities A,Biology A,N/A,N/A
+160,Conn,Travis,10,Humanities A,Functions B,Calculus A,Drama B,Asthma,N/A
+161,Erdman,Blanche,11,Drama A,Art A,Physics B,Computer Engineering A,N/A,Football
+162,Tillman,Jamar,10,Art A,Philosophy B,Computer Engineering B,Humanities B,N/A,N/A
+163,Nitzsche,Anahi,12,Humanities B,Computer Engineering A,Physics B,Drama A,N/A,N/A
+164,Fahey,Nelle,12,Biology A,Computer Science B,Art B,Drama A,N/A,N/A
+165,Hickle,Nathanael,10,Drama B,Humanities A,Philosophy B,Functions B,N/A,Basketball
+166,Harris,Allie,10,Humanities A,Philosophy B,Biology A,Computer Science A,N/A,N/A
+167,Bahringer,Sammie,12,Computer Science B,Physics B,Art A,Functions A,N/A,Video Game Club
+168,McLaughlin,Chesley,12,Calculus A,Physics B,Humanities A,Drama A,Immunocompromised,Computer Science Club
+169,Lang,Briana,10,Art B,Calculus A,Physics B,Drama A,N/A,N/A
+170,Boehm,Jarrett,12,Drama B,Art B,Humanities A,Functions A,N/A,Baseball
+171,Rosenbaum,Theresa,9,Biology A,Drama A,Computer Engineering A,Computer Science B,N/A,Soccer
+172,Jakubowski,Haylee,11,Philosophy A,Computer Engineering A,Art A,Computer Science B,N/A,"Board Game Club,Football"
+173,Gutmann,Weldon,11,Biology B,Physics B,Calculus A,Computer Engineering A,N/A,N/A
+174,Johns,Josefina,9,Art A,Computer Engineering B,Drama A,Calculus A,N/A,Video Game Club
+175,Conroy,Tad,10,Philosophy B,Art A,Calculus A,Drama A,N/A,N/A
+176,Moen,Pearl,11,Biology B,Functions B,Drama B,Computer Engineering A,N/A,N/A
+177,Steuber,Tomasa,9,Physics B,Functions B,Art B,Computer Engineering A,N/A,N/A
+178,Abbott,Leonardo,11,Art B,Functions B,Philosophy A,Calculus A,N/A,N/A
+179,Howe,Ashlee,10,Physics B,Biology A,Philosophy A,Computer Science B,N/A,N/A
+180,Casper,Jerome,9,Functions B,Art A,Physics B,Biology B,N/A,N/A
+181,Yundt,Paris,12,Functions B,Physics B,Humanities A,Biology B,N/A,N/A
+182,Abshire,Fred,10,Computer Science A,Art B,Philosophy A,Biology A,N/A,Board Game Club
+183,Sanford,Blaze,9,Biology A,Functions B,Physics A,Humanities B,N/A,N/A
+184,Mante,Colby,9,Calculus B,Biology B,Humanities A,Art B,N/A,N/A
+185,Gerlach,Juwan,9,Art A,Humanities B,Calculus B,Functions B,N/A,N/A
+186,Dicki,Lonie,9,Humanities B,Functions B,Computer Science B,Drama A,N/A,N/A
+187,Stoltenberg,Dominique,10,Calculus B,Philosophy A,Biology B,Functions A,N/A,N/A
+188,Botsford,Shawn,11,Calculus B,Humanities B,Art A,Computer Science A,N/A,N/A
+189,Zieme,Rogelio,12,Computer Engineering B,Calculus A,Drama B,Computer Science B,N/A,N/A
+190,Conroy,Rebekah,9,Physics B,Functions A,Art B,Drama A,N/A,N/A
+191,Rosenbaum,Jennyfer,10,Philosophy B,Humanities B,Biology B,Art B,N/A,N/A
+192,Brown,Joel,12,Art B,Biology B,Calculus A,Humanities B,N/A,N/A
+193,Leannon,Jorge,9,Computer Engineering A,Art A,Computer Science B,Physics B,N/A,N/A
+194,Ullrich,Adah,12,Calculus B,Computer Science A,Drama A,Art A,N/A,N/A
+195,Toy,Florine,10,Biology A,Functions A,Drama A,Philosophy A,N/A,N/A
+196,Cassin,Jorge,11,Philosophy B,Art B,Drama A,Physics A,N/A,N/A
+197,Rippin,Rachael,9,Humanities B,Calculus B,Drama A,Philosophy A,N/A,N/A
+198,Morar,Elliot,10,Drama B,Art B,Philosophy A,Physics B,N/A,N/A
+199,Hermiston,Estel,9,Physics B,Philosophy B,Drama B,Art A,N/A,N/A
+200,Reynolds,Tate,9,Physics B,Art B,Computer Science A,Biology B,N/A,N/A
+201,Shields,Nova,9,Humanities A,Calculus B,Biology B,Philosophy B,N/A,Choir
+202,Kub,Karolann,11,Biology A,Humanities A,Functions B,Philosophy B,N/A,Band
+203,Howell,Floy,12,Computer Science B,Biology A,Philosophy A,Functions B,N/A,Choir
+204,Dibbert,Efrain,11,Drama A,Functions A,Calculus A,Computer Engineering A,N/A,N/A
+205,Hagenes,Peyton,9,Calculus B,Philosophy B,Art B,Functions B,N/A,N/A
+206,Kuphal,Destinee,10,Art B,Computer Science B,Humanities B,Computer Engineering B,N/A,N/A
+207,Kuhn,Jaylen,9,Functions A,Drama B,Art B,Computer Science B,N/A,N/A
+208,Jacobi,Marilou,10,Drama B,Biology B,Humanities B,Functions B,N/A,N/A
+209,Murphy,Loraine,11,Humanities B,Biology A,Drama A,Physics A,N/A,Computer Science Club
+210,Schmidt,Nigel,11,Biology A,Functions B,Drama B,Philosophy B,N/A,N/A
+211,Morissette,Mathew,9,Philosophy A,Calculus A,Drama B,Computer Science A,N/A,N/A
+212,Anderson,Maybell,10,Philosophy A,Functions A,Computer Science B,Drama A,N/A,N/A
+213,Hagenes,Jordan,12,Drama A,Computer Science B,Functions A,Physics A,N/A,N/A
+214,Luettgen,Otis,12,Computer Engineering B,Physics A,Philosophy B,Humanities A,N/A,N/A
+215,Weissnat,Michelle,12,Biology A,Computer Science B,Drama A,Art A,N/A,N/A
+216,Oberbrunner,Jeanie,10,Biology A,Physics A,Philosophy A,Drama A,N/A,N/A
+217,Harvey,Lisette,11,Drama B,Biology B,Computer Engineering B,Philosophy A,N/A,N/A
+218,Towne,Candace,12,Functions B,Computer Engineering B,Calculus A,Drama A,N/A,N/A
+219,Wintheiser,Amira,11,Calculus B,Physics B,Humanities A,Drama B,N/A,N/A
+220,Smith,Elza,9,Calculus B,Art B,Philosophy A,Computer Science B,N/A,N/A
+221,King,Jammie,9,Functions B,Drama B,Philosophy A,Computer Engineering B,N/A,N/A
+222,Koepp,Estefania,12,Drama B,Physics A,Biology B,Philosophy B,N/A,N/A
+223,Kshlerin,Javon,10,Computer Engineering B,Calculus A,Philosophy B,Drama B,N/A,N/A
+224,Pfannerstill,Jodie,12,Physics A,Computer Engineering A,Functions A,Humanities B,N/A,N/A
+225,Wiegand,Jesus,9,Drama A,Calculus A,Physics B,Art B,N/A,N/A
+226,Morissette,Peter,12,Computer Engineering B,Calculus A,Philosophy B,Physics A,N/A,N/A
+227,D'Amore,Katherine,11,Biology B,Calculus B,Physics B,Drama B,N/A,N/A
+228,Cummerata,Stephan,9,Functions B,Humanities A,Philosophy A,Biology B,N/A,N/A
+229,Hilll,Steve,9,Calculus B,Biology B,Art B,Drama A,N/A,N/A
+230,Denesik,Danika,11,Computer Engineering B,Drama A,Biology B,Computer Science B,N/A,N/A
+231,Beer,Providenci,11,Humanities B,Art A,Physics B,Biology B,N/A,N/A
+232,Russel,Maryjane,9,Physics A,Art A,Humanities B,Philosophy B,N/A,N/A
+233,Zemlak,Audra,10,Functions B,Computer Science B,Humanities A,Calculus A,N/A,N/A
+234,Schuster,Bertrand,11,Art B,Computer Science A,Computer Engineering B,Biology B,N/A,N/A
+235,Oberbrunner,Breanne,10,Calculus A,Computer Science B,Functions A,Biology B,N/A,N/A
+236,Spinka,Nicklaus,11,Philosophy A,Biology B,Humanities B,Functions A,N/A,N/A
+237,Bradtke,Lacy,12,Drama B,Physics A,Humanities A,Functions B,N/A,Football
+238,Walsh,Reba,11,Calculus A,Drama B,Biology B,Computer Engineering A,Diabetes,N/A
+239,Rodriguez,Mikayla,12,Drama B,Computer Engineering B,Biology A,Calculus B,N/A,N/A
+240,Champlin,Jonathan,12,Philosophy A,Physics B,Humanities B,Functions A,N/A,N/A
+241,Effertz,Buck,11,Philosophy B,Computer Engineering B,Humanities B,Physics B,N/A,Video Game Club
+242,Blanda,Nat,12,Computer Science B,Drama B,Calculus B,Philosophy B,N/A,N/A
+243,Lemke,Enid,11,Drama A,Biology A,Art B,Functions B,N/A,N/A
+244,Cummings,Berneice,10,Computer Engineering B,Art B,Computer Science B,Humanities B,N/A,N/A
+245,Hartmann,Sherwood,11,Functions B,Computer Engineering A,Art A,Physics B,N/A,N/A
+246,Bruen,Myrtis,12,Computer Engineering A,Art B,Physics B,Drama A,N/A,N/A
+247,Glover,Audra,12,Functions A,Art A,Biology B,Computer Engineering A,N/A,N/A
+248,Mante,Jaron,12,Physics B,Functions B,Art B,Computer Science A,N/A,N/A
+249,Hodkiewicz,Cale,9,Computer Science A,Drama B,Functions B,Biology B,N/A,Video Game Club
+250,Russel,Deontae,11,Physics B,Computer Engineering B,Biology A,Art A,N/A,"Board Game Club,Soccer"
+251,Abernathy,Brain,9,Art B,Drama A,Physics B,Computer Science A,N/A,N/A
+252,Schultz,Eryn,12,Biology B,Computer Engineering A,Philosophy A,Computer Science A,N/A,N/A
+253,Kassulke,Rocio,12,Art B,Physics B,Computer Engineering B,Calculus B,N/A,N/A
+254,Littel,Celestino,9,Physics B,Art B,Functions B,Biology A,N/A,N/A
+255,Beatty,Zora,10,Calculus B,Computer Science B,Biology A,Drama B,N/A,N/A
+256,Wunsch,Caterina,11,Biology A,Computer Engineering B,Functions A,Philosophy A,N/A,N/A
+257,Marvin,Mateo,10,Philosophy B,Drama B,Calculus B,Physics A,N/A,N/A
+258,Jones,Sabryna,12,Functions B,Physics A,Art A,Calculus A,N/A,N/A
+259,Langosh,Roberta,12,Humanities A,Drama A,Computer Engineering A,Physics A,N/A,N/A
+260,Kuvalis,Litzy,10,Humanities A,Philosophy B,Computer Engineering A,Computer Science A,N/A,N/A
+261,Witting,Gregoria,10,Physics B,Art A,Computer Engineering B,Drama A,N/A,Soccer
+262,O'Hara,Brenda,9,Biology B,Functions A,Computer Engineering B,Computer Science B,N/A,N/A
+263,Reinger,Santos,12,Humanities A,Calculus A,Physics B,Computer Engineering B,N/A,Drama Club
+264,Torp,Elroy,10,Philosophy B,Art B,Physics B,Calculus A,N/A,N/A
+265,Krajcik,Cesar,12,Functions B,Philosophy B,Computer Science B,Computer Engineering A,N/A,N/A
+266,Waters,Hans,12,Functions A,Calculus B,Philosophy B,Humanities A,N/A,N/A
+267,Durgan,Luna,12,Computer Engineering A,Functions B,Calculus A,Computer Science A,N/A,N/A
+268,Prohaska,Alvina,12,Art A,Physics B,Biology B,Computer Engineering B,N/A,N/A
+269,Watsica,Landen,9,Physics B,Computer Engineering B,Philosophy A,Calculus B,N/A,N/A
+270,Little,Merle,9,Art B,Biology A,Functions B,Computer Science B,N/A,N/A
+271,Dickinson,Ruth,12,Biology B,Humanities A,Computer Science A,Philosophy B,N/A,"Soccer,Baseball"
+272,Douglas,Sheila,12,Physics B,Biology A,Humanities B,Drama B,N/A,Baseball
+273,Lind,Ludie,11,Calculus A,Philosophy B,Computer Engineering B,Drama A,N/A,N/A
+274,Feil,Daniella,10,Drama B,Functions B,Art A,Calculus B,N/A,Baseball
+275,Olson,Carlie,9,Drama B,Biology B,Calculus B,Art A,N/A,N/A
+276,Medhurst,Clement,10,Art A,Calculus A,Computer Science B,Biology B,N/A,N/A
+277,Kub,Ervin,9,Art B,Biology B,Physics B,Drama A,N/A,N/A
+278,Olson,Caroline,12,Calculus B,Functions B,Computer Engineering B,Drama B,N/A,N/A
+279,Feeney,Tomas,11,Philosophy B,Biology B,Humanities A,Computer Engineering B,Diabetes,N/A
+280,Gibson,Scot,9,Physics B,Calculus B,Philosophy A,Art B,N/A,N/A
+281,Thiel,Dustin,9,Art B,Computer Engineering A,Humanities B,Biology A,N/A,N/A
+282,Flatley,Guillermo,10,Computer Science B,Physics B,Calculus B,Computer Engineering B,N/A,N/A
+283,Howe,Adam,9,Biology B,Calculus B,Drama B,Art A,N/A,N/A
+284,Metz,Frieda,9,Drama A,Biology A,Humanities A,Physics A,N/A,N/A
+285,Boyer,Hosea,9,Functions B,Art B,Drama B,Philosophy B,N/A,N/A
+286,Bogisich,Peyton,10,Computer Science A,Physics A,Functions B,Drama A,N/A,N/A
+287,Roob,Stone,10,Philosophy A,Computer Science B,Drama B,Biology B,N/A,N/A
+288,Koss,Jerad,11,Computer Engineering B,Humanities A,Art B,Calculus A,N/A,N/A
+289,Turner,Brittany,11,Physics A,Philosophy A,Computer Science B,Humanities B,N/A,N/A
+290,Abshire,Dusty,12,Biology B,Drama B,Physics B,Computer Engineering A,N/A,N/A
+291,Stroman,Erick,10,Art A,Humanities B,Biology A,Functions B,N/A,N/A
+292,Kassulke,Howell,12,Philosophy A,Art A,Physics A,Computer Engineering A,N/A,N/A
+293,Tromp,Laney,12,Drama B,Physics B,Computer Science B,Biology B,N/A,N/A
+294,Gottlieb,Kim,9,Drama B,Computer Science A,Physics B,Philosophy A,N/A,N/A
+295,Wolff,Era,10,Drama A,Functions B,Philosophy A,Computer Science A,N/A,N/A
+296,Schulist,Lenna,9,Functions B,Computer Engineering A,Humanities A,Drama A,N/A,N/A
+297,Beer,Aric,11,Humanities A,Functions A,Art B,Philosophy B,N/A,N/A
+298,Rau,Randy,9,Physics A,Computer Engineering A,Functions A,Calculus B,N/A,N/A
+299,Powlowski,Zaria,9,Art B,Calculus A,Functions B,Computer Science B,N/A,N/A
+300,Beer,Osvaldo,9,Philosophy B,Drama B,Physics B,Calculus B,N/A,N/A
+301,Heidenreich,Cordell,12,Drama A,Biology A,Computer Science B,Philosophy A,N/A,N/A
+302,Watsica,Carlie,12,Computer Engineering B,Biology A,Physics B,Calculus B,N/A,N/A
+303,Goodwin,Tyshawn,9,Art A,Physics A,Drama A,Computer Science A,N/A,N/A
+304,Konopelski,Nils,11,Calculus A,Computer Science B,Philosophy A,Computer Engineering B,N/A,N/A
+305,Beahan,Margarita,11,Biology B,Calculus B,Philosophy A,Computer Science B,N/A,N/A
+306,Rippin,Ruthie,9,Physics A,Calculus B,Computer Engineering A,Philosophy B,N/A,N/A
+307,Shields,Hiram,10,Calculus B,Philosophy A,Functions A,Computer Engineering B,Immunocompromised,N/A
+308,Johnson,Tressa,9,Philosophy B,Drama A,Physics A,Art B,N/A,Baseball
+309,Botsford,Roger,9,Calculus B,Computer Engineering A,Art A,Biology B,N/A,Band
+310,Swift,Ronaldo,10,Computer Engineering B,Art A,Computer Science B,Functions B,N/A,Computer Science Club
+311,Turcotte,Chester,11,Functions A,Computer Engineering B,Drama B,Computer Science B,N/A,N/A
+312,Kulas,Carmella,9,Computer Engineering B,Philosophy A,Humanities A,Art B,N/A,N/A
+313,Simonis,Francis,9,Humanities A,Physics A,Drama A,Functions B,N/A,N/A
+314,Wolf,Fidel,9,Physics A,Calculus A,Philosophy B,Functions A,Diabetes,N/A
+315,Swift,Delta,9,Physics B,Drama B,Art B,Philosophy A,N/A,N/A
+316,Williamson,Anna,12,Calculus B,Drama A,Computer Science A,Functions B,N/A,N/A
+317,Feeney,Monica,11,Calculus A,Art A,Physics B,Drama B,N/A,N/A
+318,Schultz,Mathias,9,Calculus B,Physics A,Drama A,Functions A,N/A,N/A
+319,Mertz,Damion,10,Art B,Philosophy B,Computer Science A,Physics B,N/A,N/A
+320,Jenkins,Lydia,12,Humanities A,Philosophy B,Physics A,Computer Science A,N/A,N/A
+321,Windler,Mikel,11,Computer Science A,Physics B,Functions B,Humanities A,N/A,Board Game Club
+322,Abbott,Will,12,Biology B,Drama A,Functions A,Calculus A,N/A,N/A
+323,DuBuque,Ayana,11,Computer Science B,Humanities B,Computer Engineering B,Art A,N/A,N/A
+324,Schultz,Cornelius,10,Biology A,Humanities A,Calculus B,Computer Engineering A,N/A,N/A
+325,Lindgren,Alexanne,11,Art B,Physics A,Functions A,Drama B,N/A,N/A
+326,Wisozk,Terence,9,Art B,Physics B,Humanities B,Computer Science B,N/A,N/A
+327,Mohr,Mustafa,11,Functions A,Art B,Drama A,Philosophy B,N/A,N/A
+328,McGlynn,Gregory,10,Philosophy A,Humanities A,Drama B,Art B,N/A,Board Game Club
+329,Streich,Maud,10,Computer Engineering B,Calculus A,Functions A,Computer Science B,N/A,N/A
+330,Senger,Franz,9,Philosophy A,Computer Science B,Humanities A,Calculus B,N/A,N/A
+331,Collier,Adolf,11,Humanities A,Physics A,Computer Engineering B,Art A,N/A,N/A
+332,Farrell,Ebony,11,Calculus A,Philosophy A,Humanities A,Functions B,N/A,N/A
+333,Rutherford,Gretchen,11,Biology B,Physics B,Computer Engineering A,Computer Science B,N/A,N/A
+334,Reinger,Maurine,9,Philosophy A,Humanities B,Biology A,Physics B,N/A,Baseball
+335,Yundt,Flavio,11,Computer Engineering B,Functions B,Art B,Physics A,N/A,Soccer
+336,King,Nellie,12,Biology A,Functions B,Computer Science B,Art A,N/A,N/A
+337,Gleason,Crystel,9,Drama A,Biology A,Computer Science B,Calculus A,N/A,N/A
+338,Hane,Dashawn,12,Functions B,Drama B,Biology B,Computer Science B,N/A,N/A
+339,Kemmer,Ruth,10,Computer Science B,Art A,Philosophy A,Functions A,N/A,"Choir,Board Game Club"
+340,Harris,Buddy,12,Functions A,Computer Science B,Humanities A,Drama B,N/A,N/A
+341,Howe,Fannie,10,Humanities B,Drama A,Philosophy A,Biology B,N/A,N/A
+342,Tromp,Kareem,9,Calculus A,Drama A,Computer Engineering B,Functions A,N/A,N/A
+343,Flatley,Elliott,12,Biology A,Computer Engineering A,Philosophy A,Computer Science B,N/A,N/A
+344,Conn,Daryl,9,Computer Science A,Computer Engineering B,Physics B,Calculus A,N/A,N/A
+345,Berge,Wilmer,10,Physics A,Computer Science A,Philosophy A,Biology B,N/A,N/A
+346,Waelchi,Solon,9,Drama A,Humanities B,Biology A,Art B,N/A,N/A
+347,Reinger,Jerod,9,Humanities B,Calculus B,Philosophy B,Functions B,N/A,N/A
+348,Simonis,Ron,12,Art B,Biology A,Functions B,Computer Science B,N/A,N/A
+349,Dickinson,Roma,12,Computer Science A,Art B,Calculus B,Computer Engineering A,N/A,N/A
+350,Ritchie,Rosina,10,Humanities B,Calculus B,Computer Science B,Drama A,N/A,N/A
+351,Bartoletti,Rashawn,11,Functions A,Computer Engineering A,Biology B,Calculus B,N/A,N/A
+352,Beer,Tracy,11,Philosophy A,Biology B,Computer Science A,Physics B,N/A,N/A
+353,Roberts,Shaun,9,Calculus A,Functions A,Computer Science B,Philosophy B,N/A,N/A
+354,Shields,Carole,12,Drama A,Art A,Functions A,Humanities B,N/A,N/A
+355,Wuckert,Deborah,9,Computer Science B,Computer Engineering A,Drama A,Functions B,N/A,N/A
+356,Blanda,Trevor,12,Computer Engineering A,Functions A,Computer Science B,Physics A,N/A,N/A
+357,Grant,Randal,10,Humanities B,Computer Engineering B,Physics A,Biology B,N/A,N/A
+358,Senger,Sallie,12,Functions B,Art B,Computer Engineering A,Philosophy B,N/A,N/A
+359,Runolfsdottir,Geovanni,12,Physics A,Computer Engineering A,Biology A,Humanities B,N/A,N/A
+360,Jaskolski,Tracy,12,Art A,Philosophy A,Physics A,Humanities A,N/A,N/A
+361,Jenkins,Jerrell,9,Drama B,Physics B,Functions B,Computer Science A,N/A,N/A
+362,Ankunding,Sonny,12,Humanities B,Computer Engineering A,Computer Science B,Drama A,N/A,"Band,Board Game Club"
+363,Hayes,Filomena,11,Biology B,Computer Engineering A,Humanities B,Calculus B,N/A,N/A
+364,Weber,Assunta,11,Calculus B,Computer Engineering A,Physics A,Biology B,N/A,N/A
+365,Larkin,Karl,11,Computer Science A,Physics A,Calculus A,Functions B,N/A,N/A
+366,Deckow,Kendra,11,Humanities B,Drama B,Biology B,Physics B,N/A,N/A
+367,Beatty,Brenda,9,Computer Science B,Art A,Physics A,Calculus A,N/A,N/A
+368,Weber,Judah,12,Calculus A,Computer Science B,Biology A,Humanities A,N/A,N/A
+369,Zboncak,Shana,9,Drama B,Computer Science B,Art B,Functions A,N/A,N/A
+370,Bauch,Frederik,11,Drama A,Physics B,Biology A,Functions A,N/A,N/A
+371,Kuphal,Anastasia,11,Physics A,Biology B,Art A,Functions A,N/A,N/A
+372,McGlynn,Ricky,9,Drama A,Computer Science A,Biology B,Physics B,N/A,N/A
+373,Luettgen,Edna,11,Art B,Computer Engineering A,Philosophy B,Computer Science A,N/A,N/A
+374,Reichert,Mattie,9,Philosophy A,Computer Science A,Functions A,Humanities B,N/A,N/A
+375,Eichmann,Mozell,11,Physics B,Art B,Philosophy A,Computer Engineering A,N/A,N/A
+376,Schaefer,Amber,9,Biology B,Calculus B,Computer Engineering A,Physics A,N/A,N/A
+377,Armstrong,Colten,10,Computer Science A,Drama A,Biology A,Humanities A,N/A,N/A
+378,Luettgen,Abdul,11,Computer Engineering B,Calculus A,Biology B,Philosophy B,N/A,N/A
+379,Osinski,Meggie,11,Calculus A,Computer Science B,Humanities B,Physics A,N/A,N/A
+380,Kessler,General,9,Art A,Physics B,Computer Science A,Functions B,N/A,N/A
+381,Olson,Joana,10,Computer Science B,Humanities A,Calculus B,Computer Engineering B,N/A,N/A
+382,Smith,Sven,9,Biology A,Physics B,Art B,Functions B,N/A,N/A
+383,Kessler,Winfield,10,Philosophy B,Computer Science B,Biology A,Drama B,N/A,N/A
+384,Leffler,Jacky,9,Philosophy A,Functions A,Calculus B,Computer Science A,N/A,N/A
+385,Boyle,Jaida,11,Calculus B,Philosophy B,Humanities B,Computer Engineering B,N/A,N/A
+386,Kuphal,Anita,9,Biology A,Art A,Humanities A,Computer Science A,N/A,N/A
+387,Ullrich,Sebastian,11,Humanities B,Calculus B,Philosophy B,Art A,N/A,N/A
+388,Greenfelder,Jamar,9,Physics A,Art B,Computer Science A,Biology B,N/A,N/A
+389,Hahn,Elaina,12,Humanities B,Computer Science A,Computer Engineering B,Biology B,N/A,N/A
+390,Mante,Chyna,12,Biology A,Humanities A,Calculus B,Functions A,N/A,N/A
+391,Kling,Mariam,11,Biology B,Computer Science A,Computer Engineering B,Functions B,N/A,Board Game Club
+392,Hand,Pierre,9,Biology B,Calculus B,Art A,Humanities B,N/A,N/A
+393,Schultz,Ruthe,12,Humanities B,Calculus B,Functions B,Drama B,N/A,N/A
+394,Ziemann,Anissa,11,Philosophy B,Physics B,Functions B,Computer Science B,N/A,N/A
+395,Prosacco,Andres,10,Philosophy A,Physics A,Functions B,Biology B,N/A,N/A
+396,Conroy,Clara,10,Calculus B,Computer Engineering A,Art B,Computer Science B,N/A,N/A
+397,Cormier,Enola,11,Functions A,Calculus A,Humanities A,Art B,N/A,N/A
+398,Barton,Felipa,12,Art B,Biology B,Computer Science A,Philosophy A,N/A,N/A
+399,Boyle,Marvin,9,Physics B,Computer Engineering A,Art A,Functions B,N/A,Drama Club
+400,Dicki,Stephania,11,Drama B,Humanities A,Functions A,Art A,N/A,N/A
+401,Gerhold,Dante,10,Computer Engineering A,Calculus A,Drama B,Computer Science B,N/A,N/A
+402,Schulist,Alberta,10,Humanities B,Drama B,Physics A,Computer Engineering A,N/A,N/A
+403,Christiansen,Sabryna,12,Calculus A,Humanities B,Physics B,Functions A,N/A,"Badminton,Video Game Club"
+404,Leuschke,Riley,12,Drama A,Biology B,Humanities A,Physics A,N/A,N/A
+405,Bailey,Myles,12,Computer Science A,Biology A,Functions B,Art A,N/A,N/A
+406,Smitham,Spencer,11,Philosophy B,Humanities B,Physics A,Calculus B,N/A,N/A
+407,Turner,Elwyn,11,Calculus A,Physics A,Biology B,Computer Science A,N/A,N/A
+408,Prosacco,Garland,12,Biology A,Philosophy B,Art A,Functions B,N/A,N/A
+409,Harber,Hanna,9,Physics B,Philosophy B,Computer Science B,Computer Engineering A,Asthma,N/A
+410,Schroeder,Kieran,12,Biology A,Drama A,Computer Engineering B,Art B,N/A,N/A
+411,D'Amore,Maximo,12,Physics A,Philosophy A,Computer Engineering A,Biology B,N/A,N/A
+412,Kilback,Shakira,10,Philosophy B,Art B,Humanities A,Biology B,N/A,N/A
+413,Bechtelar,Dina,12,Physics A,Art A,Computer Engineering A,Philosophy A,N/A,Video Game Club
+414,Wyman,Presley,9,Art A,Humanities A,Biology B,Physics A,N/A,N/A
+415,Feeney,Krista,10,Physics A,Biology B,Drama B,Philosophy A,N/A,N/A
+416,Moore,Aubrey,11,Computer Engineering A,Art A,Computer Science A,Physics A,N/A,N/A
+417,Denesik,Kari,10,Computer Engineering A,Functions A,Computer Science B,Calculus A,N/A,N/A
+418,Cummings,Robert,11,Functions A,Humanities B,Calculus B,Art B,N/A,Football
+419,Waelchi,Jovan,9,Humanities A,Computer Engineering A,Computer Science A,Drama A,N/A,N/A
+420,Block,Stephanie,11,Calculus A,Functions A,Art B,Philosophy A,N/A,N/A
+421,Kirlin,Travis,9,Drama A,Computer Science B,Physics A,Art A,N/A,N/A
+422,Wintheiser,Gideon,12,Humanities A,Physics A,Functions B,Philosophy A,N/A,N/A
+423,Deckow,Alana,10,Drama A,Calculus A,Philosophy B,Physics B,N/A,N/A
+424,Schaefer,Horacio,12,Biology A,Computer Science B,Functions A,Physics A,N/A,N/A
+425,Bosco,Jalen,10,Humanities A,Drama B,Computer Science A,Calculus A,N/A,N/A
+426,King,Wendy,9,Humanities A,Calculus B,Computer Science B,Drama B,N/A,N/A
+427,Langworth,Leopoldo,9,Art B,Philosophy B,Calculus B,Physics A,N/A,Basketball
+428,Macejkovic,Arnold,9,Drama B,Humanities B,Physics B,Calculus B,N/A,N/A
+429,Schinner,Shyanne,12,Computer Engineering B,Humanities A,Drama B,Calculus B,N/A,N/A
+430,McCullough,Britney,9,Humanities B,Computer Engineering B,Drama A,Calculus B,N/A,N/A
+431,Ryan,Freddy,10,Calculus A,Biology A,Drama B,Art B,N/A,N/A
+432,Mertz,Kennedy,12,Humanities A,Functions B,Calculus B,Drama A,N/A,N/A
+433,Rath,Deondre,12,Functions B,Computer Science A,Art A,Physics A,N/A,N/A
+434,Kassulke,Tiana,11,Art A,Drama B,Physics A,Humanities B,N/A,N/A
+435,Ernser,Rosella,10,Humanities A,Computer Science B,Functions B,Calculus A,N/A,N/A
+436,Connelly,Leatha,12,Biology A,Computer Engineering A,Drama B,Humanities A,N/A,N/A
+437,McDermott,Kelley,11,Philosophy A,Art B,Computer Engineering A,Physics A,N/A,N/A
+438,Feest,Wanda,12,Philosophy A,Biology A,Computer Engineering A,Art A,N/A,N/A
+439,Schneider,Alverta,9,Computer Engineering B,Physics A,Functions B,Computer Science A,N/A,N/A
+440,O'Kon,Charlie,10,Drama B,Computer Engineering B,Physics A,Calculus B,N/A,N/A
+441,Kris,Deron,10,Philosophy B,Calculus A,Physics B,Humanities B,N/A,N/A
+442,Jacobi,Abdiel,12,Computer Science A,Calculus A,Art B,Biology B,N/A,N/A
+443,Mohr,Antone,9,Functions B,Philosophy A,Biology A,Art A,N/A,Baseball
+444,Parker,Timmothy,10,Functions B,Humanities B,Biology A,Computer Engineering B,N/A,Football
+445,Mueller,Emily,12,Computer Science A,Physics B,Art B,Calculus A,N/A,N/A
+446,Wilderman,Corrine,9,Calculus B,Physics A,Computer Science A,Art B,N/A,N/A
+447,Hettinger,Karlie,9,Calculus B,Art B,Computer Science B,Humanities A,N/A,"Drama Club,Video Game Club"
+448,Skiles,Celia,12,Biology B,Functions A,Humanities A,Calculus B,N/A,N/A
+449,Koepp,Tianna,9,Humanities A,Art B,Drama A,Physics A,N/A,N/A
+450,Abbott,Susana,12,Drama A,Computer Engineering A,Art A,Biology A,N/A,Baseball
+451,Cruickshank,Chasity,10,Drama A,Physics A,Humanities B,Philosophy A,N/A,N/A
+452,Emard,Aurore,11,Computer Science A,Physics B,Functions A,Calculus B,N/A,N/A
+453,Leffler,Zoila,12,Computer Science A,Drama B,Computer Engineering A,Art B,N/A,N/A
+454,Buckridge,Hudson,10,Philosophy A,Functions A,Calculus B,Humanities B,N/A,Band
+455,Kuhic,Pascale,12,Drama B,Functions A,Computer Science B,Biology A,N/A,N/A
+456,Gleason,Linwood,12,Drama A,Computer Engineering B,Computer Science A,Humanities A,N/A,Basketball
+457,Morar,Terrell,9,Computer Science B,Computer Engineering B,Functions B,Philosophy A,N/A,N/A
+458,Powlowski,Ronaldo,10,Biology B,Drama B,Philosophy A,Calculus B,N/A,N/A
+459,Jenkins,Flo,12,Biology B,Functions B,Physics A,Humanities A,N/A,N/A
+460,Haag,Allan,9,Functions A,Art A,Philosophy A,Humanities A,N/A,N/A
+461,O'Conner,Margarette,10,Calculus A,Drama B,Biology B,Computer Science A,N/A,N/A
+462,Tromp,Roberta,12,Computer Science A,Drama A,Art B,Computer Engineering B,N/A,N/A
+463,Rippin,Katelin,9,Calculus B,Computer Science A,Philosophy B,Humanities A,N/A,N/A
+464,Koepp,Leone,12,Computer Engineering B,Drama B,Calculus A,Art B,N/A,Choir
+465,Rowe,Nova,10,Computer Science B,Philosophy A,Drama A,Computer Engineering B,N/A,N/A
+466,Gerhold,Evert,9,Calculus B,Philosophy B,Functions A,Drama B,N/A,N/A
+467,Labadie,Kali,9,Drama B,Art A,Physics A,Computer Engineering B,N/A,N/A
+468,McClure,Dixie,11,Computer Science A,Biology A,Philosophy B,Calculus A,N/A,Soccer
+469,Douglas,Carole,11,Philosophy B,Drama B,Humanities A,Biology A,N/A,N/A
+470,Muller,Furman,12,Biology B,Calculus A,Functions B,Physics B,Asthma,N/A
+471,Block,Jace,10,Philosophy B,Biology B,Art B,Physics B,N/A,N/A
+472,Wolff,Layne,11,Philosophy A,Calculus A,Art A,Functions A,N/A,"Badminton,Board Game Club"
+473,Wunsch,Jeanette,11,Computer Science B,Philosophy A,Calculus B,Art B,N/A,Video Game Club
+474,Kertzmann,Roma,12,Functions B,Humanities B,Biology A,Calculus A,N/A,N/A
+475,Kertzmann,Tressa,9,Drama A,Physics B,Art B,Computer Engineering B,N/A,N/A
+476,Champlin,Casper,11,Physics B,Computer Science A,Philosophy A,Art A,N/A,N/A
+477,Parisian,Osbaldo,9,Functions B,Art A,Drama A,Humanities B,Asthma,N/A
+478,Johns,Trudie,11,Biology B,Computer Engineering B,Functions B,Art A,N/A,N/A
+479,Kautzer,Effie,11,Computer Science B,Art A,Calculus A,Computer Engineering B,N/A,N/A
+480,Anderson,Jayson,10,Functions B,Philosophy A,Computer Engineering B,Calculus A,N/A,N/A
+481,Thiel,Justine,11,Humanities A,Physics A,Computer Engineering A,Calculus A,N/A,N/A
+482,Stokes,Kiarra,10,Philosophy A,Computer Engineering B,Computer Science B,Calculus A,Asthma,N/A
+483,Hirthe,Jon,11,Philosophy B,Biology A,Computer Science B,Physics B,N/A,N/A
+484,Brekke,Lew,11,Computer Science A,Drama B,Art A,Humanities A,N/A,N/A
+485,Rau,Emelia,11,Biology A,Functions A,Calculus B,Physics B,N/A,N/A
+486,Jacobs,Melba,12,Philosophy B,Computer Science A,Computer Engineering B,Drama B,N/A,N/A
+487,Hermiston,Cristopher,11,Functions A,Physics B,Humanities A,Philosophy A,N/A,N/A
+488,Murphy,Jasen,12,Art A,Biology B,Drama B,Functions A,N/A,N/A
+489,Cruickshank,Daron,11,Computer Engineering A,Philosophy A,Drama A,Physics B,N/A,N/A
+490,Koch,Kavon,9,Philosophy A,Functions A,Humanities A,Computer Engineering A,N/A,N/A
+491,Glover,Hiram,12,Art A,Drama A,Computer Science A,Humanities B,N/A,Basketball
+492,Klein,Carmelo,11,Functions A,Computer Science B,Biology A,Humanities A,N/A,N/A
+493,Walker,Marjory,11,Art B,Computer Science A,Biology A,Computer Engineering B,N/A,N/A
+494,Leuschke,Edward,12,Calculus A,Humanities B,Physics A,Computer Engineering B,N/A,N/A
+495,Paucek,Sibyl,11,Art B,Functions A,Drama A,Biology A,N/A,N/A
+496,Shields,Houston,10,Calculus A,Philosophy B,Computer Engineering A,Humanities B,N/A,N/A
+497,Fisher,Bettie,12,Biology A,Physics B,Functions A,Art B,N/A,N/A
+498,Gislason,Kristy,11,Computer Engineering B,Functions A,Biology A,Humanities B,N/A,N/A
+499,Zieme,Eve,12,Humanities A,Functions A,Drama A,Art B,N/A,N/A
+500,Roob,Ron,10,Humanities B,Computer Science A,Art A,Computer Engineering A,N/A,N/A
+501,Lowe,Hellen,10,Physics A,Humanities B,Drama A,Calculus B,N/A,N/A
+502,Nader,Kacie,10,Physics A,Humanities A,Art A,Calculus B,Diabetes,N/A
+503,Wunsch,Floy,10,Biology B,Art B,Functions B,Drama B,N/A,N/A
+504,Klein,Murray,9,Art A,Philosophy A,Computer Science A,Drama B,N/A,N/A
+505,Willms,D'angelo,10,Computer Science B,Biology B,Calculus B,Computer Engineering B,N/A,N/A
+506,Ryan,Jasen,10,Drama A,Humanities B,Philosophy B,Biology A,N/A,N/A
+507,Kreiger,Gudrun,11,Calculus A,Functions B,Art A,Philosophy A,N/A,N/A
+508,Purdy,Shawna,11,Physics B,Functions A,Calculus A,Computer Engineering B,N/A,N/A
+509,Huels,Dillan,11,Philosophy B,Computer Engineering B,Biology B,Functions A,N/A,N/A
+510,Douglas,Karson,9,Biology A,Calculus A,Computer Engineering A,Philosophy A,N/A,N/A
+511,Hessel,Henderson,9,Art B,Biology A,Functions B,Humanities A,N/A,N/A
+512,Yost,Albertha,11,Functions A,Computer Science A,Physics A,Philosophy A,N/A,N/A
+513,Bernhard,Judy,9,Computer Engineering A,Calculus B,Biology A,Computer Science A,N/A,N/A
+514,Heathcote,Reuben,10,Biology A,Humanities A,Art B,Computer Science A,N/A,N/A
+515,Schultz,Eldridge,11,Art A,Physics B,Biology A,Functions A,N/A,N/A
+516,McClure,Alberta,10,Drama B,Philosophy A,Calculus B,Humanities B,N/A,N/A
+517,King,Damaris,10,Drama B,Computer Science B,Biology B,Computer Engineering A,Asthma,N/A
+518,McGlynn,Trystan,11,Art B,Functions B,Computer Engineering B,Humanities B,N/A,N/A
+519,Considine,Simeon,9,Computer Engineering A,Calculus B,Philosophy B,Drama B,N/A,N/A
+520,Conn,Tyrel,11,Biology A,Calculus A,Computer Engineering B,Humanities A,N/A,N/A
+521,Dach,Tressie,9,Calculus B,Biology A,Computer Engineering A,Philosophy A,N/A,N/A
+522,Trantow,Hank,10,Humanities B,Physics B,Computer Engineering A,Art A,N/A,N/A
+523,Bruen,Assunta,10,Humanities A,Computer Engineering B,Art A,Calculus B,N/A,N/A
+524,Hilll,Adeline,9,Biology A,Philosophy B,Computer Engineering B,Humanities B,N/A,N/A
+525,O'Kon,Judson,10,Biology B,Computer Science A,Philosophy B,Art A,N/A,N/A
+526,Heaney,Anabelle,12,Functions A,Philosophy B,Humanities B,Physics B,N/A,N/A
+527,Jakubowski,Noemi,11,Computer Science A,Functions A,Calculus A,Biology A,N/A,N/A
+528,King,Clay,11,Drama B,Humanities A,Computer Engineering B,Physics B,N/A,N/A
+529,Orn,Kris,12,Art B,Humanities B,Philosophy B,Functions A,N/A,N/A
+530,Wisoky,William,10,Physics B,Computer Science B,Calculus B,Philosophy A,N/A,N/A
+531,Braun,Florencio,10,Physics B,Drama A,Computer Engineering B,Humanities B,N/A,N/A
+532,Bayer,Justina,11,Drama B,Humanities A,Biology A,Art B,N/A,N/A
+533,Hessel,Wilfredo,11,Computer Engineering B,Calculus B,Philosophy B,Humanities A,N/A,N/A
+534,Littel,Rudolph,12,Computer Science B,Calculus B,Biology B,Computer Engineering A,N/A,N/A
+535,Stiedemann,Schuyler,9,Computer Engineering A,Philosophy B,Calculus B,Drama B,Diabetes,N/A
+536,Daniel,Cheyanne,11,Calculus A,Philosophy B,Computer Engineering B,Biology A,N/A,N/A
+537,Metz,Destiny,12,Humanities B,Functions B,Calculus B,Drama B,N/A,N/A
+538,Schimmel,Bridget,12,Humanities A,Computer Science A,Drama B,Art B,N/A,Board Game Club
+539,Watsica,Rafael,10,Functions A,Calculus B,Biology A,Humanities A,N/A,N/A
+540,Erdman,Leone,12,Drama B,Biology A,Philosophy B,Functions A,N/A,N/A
+541,Bahringer,Dominique,12,Functions A,Calculus B,Art B,Computer Engineering A,N/A,N/A
+542,Cormier,Mariano,9,Functions B,Computer Engineering B,Biology A,Philosophy A,N/A,N/A
+543,Ryan,Magnolia,9,Humanities B,Computer Science A,Biology B,Physics B,N/A,N/A
+544,Jacobs,Hank,12,Computer Engineering A,Calculus B,Humanities B,Art A,N/A,N/A
+545,Connelly,Geo,12,Calculus A,Philosophy B,Drama B,Art B,N/A,Board Game Club
+546,Bins,Dexter,12,Computer Science B,Philosophy B,Physics A,Drama B,N/A,N/A
+547,Sipes,Thea,9,Drama A,Philosophy A,Biology B,Art B,N/A,N/A
+548,Beatty,Kylee,10,Art B,Humanities A,Drama B,Philosophy A,N/A,N/A
+549,Harvey,Baron,11,Computer Science A,Drama A,Biology A,Art B,N/A,N/A
+550,Schulist,Ettie,12,Functions B,Philosophy B,Drama B,Biology A,N/A,N/A
+551,Murray,Macie,9,Computer Science B,Computer Engineering B,Calculus A,Physics B,N/A,N/A
+552,Kuphal,Germaine,10,Humanities A,Functions A,Biology B,Drama B,N/A,N/A
+553,Donnelly,Mayra,11,Philosophy B,Physics A,Humanities B,Art A,N/A,N/A
+554,Gutmann,Nella,11,Computer Science A,Philosophy A,Art A,Drama B,N/A,Basketball
+555,Heaney,Mikel,12,Computer Engineering B,Drama A,Biology B,Functions A,Diabetes,N/A
+556,Gerhold,Elisha,12,Philosophy B,Functions B,Humanities B,Art A,N/A,N/A
+557,Hirthe,Easton,10,Humanities A,Computer Engineering B,Biology B,Drama B,N/A,N/A
+558,Heidenreich,Jesse,9,Philosophy B,Functions A,Computer Engineering A,Humanities A,N/A,N/A
+559,Huel,Karina,11,Physics A,Biology B,Drama B,Art B,Asthma,N/A
+560,Deckow,Philip,9,Functions B,Computer Engineering B,Drama A,Art B,N/A,Board Game Club
+561,Kessler,Tavares,12,Humanities A,Philosophy B,Computer Engineering B,Art A,N/A,N/A
+562,Koepp,Alison,12,Calculus A,Computer Engineering B,Drama A,Physics B,N/A,N/A
+563,Connelly,Rick,9,Functions B,Biology A,Philosophy B,Humanities A,N/A,N/A
+564,Kling,Abbey,10,Computer Science B,Functions B,Physics A,Computer Engineering B,N/A,N/A
+565,Kuhn,Kay,10,Computer Science A,Drama A,Computer Engineering A,Physics B,N/A,Badminton
+566,Hudson,Elisha,11,Computer Science B,Calculus B,Humanities B,Philosophy A,Asthma,N/A
+567,Kiehn,Jake,11,Computer Science A,Biology A,Functions A,Art B,N/A,N/A
+568,Trantow,Brennan,11,Computer Engineering B,Functions B,Drama A,Art A,N/A,N/A
+569,Murphy,Moshe,12,Humanities B,Calculus B,Functions A,Computer Engineering B,N/A,N/A
+570,Bergstrom,Kamron,12,Physics A,Philosophy A,Humanities B,Computer Engineering B,N/A,N/A
+571,Nader,Elmer,11,Functions A,Philosophy A,Calculus A,Physics B,N/A,N/A
+572,Goodwin,Hayden,10,Computer Science A,Philosophy A,Humanities B,Physics B,N/A,N/A
+573,Hauck,Marjory,9,Computer Science B,Calculus B,Humanities B,Biology A,N/A,N/A
+574,Mohr,Clotilde,12,Functions A,Calculus B,Philosophy B,Computer Engineering B,N/A,Video Game Club
+575,Raynor,Ceasar,10,Computer Science B,Calculus B,Philosophy B,Functions A,N/A,Drama Club
+576,Lynch,Anika,12,Computer Science B,Functions B,Humanities B,Biology A,Asthma,N/A
+577,Jacobs,Cale,12,Physics A,Functions B,Philosophy B,Biology A,N/A,N/A
+578,Douglas,Lennie,10,Physics A,Computer Science A,Calculus A,Biology A,N/A,"Board Game Club,Computer Science Club"
+579,Johnson,Roxane,9,Computer Science A,Functions B,Humanities B,Drama B,N/A,N/A
+580,Hane,Serena,11,Computer Science B,Functions B,Physics A,Computer Engineering A,N/A,"Drama Club,Board Game Club"
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
