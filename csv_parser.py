@@ -8,6 +8,7 @@ import numpy as np
 import df_ops
 import twilio_client as sms
 import probs
+import matplotlib.pyplot as plt
 
 # def plot_from_csv(filename):
 # 	csv_data = pd.read_csv(filename)
@@ -50,13 +51,14 @@ def main():
 	dfwrapper = df_ops.DfWrapper(student_df, teacher_df, ta_df, zby1_df)
 	
 	# Insert initial infections
+	# Holds the initial Data setup
+	print('Processing Period 1')
 	dfwrapper.update_infection_value(531, 1, 1.0)
 	dfwrapper.update_infection_value(86, 1, 1.0)
 	dfwrapper.update_infection_value(131, 1, 1.0)
-
-	#dfwrapper.update_infection_value(1, 5, 0.6)
-	period_arr = [2, 2.5, 3, 4]
-	current_infections = [0, 0, 0, 0]
+	
+	period_arr = [2, 2.5, 3, 4, 5]
+	current_infections = []
 	for i in range(len(period_arr)):
 		period = period_arr[i]
 		prev_period = period_arr[i] - 1
@@ -64,20 +66,24 @@ def main():
 		if period == 3:
 			prev_period = 2.5
 		if period == 2.5:
+			print('Processing Lunch')
 			# Special case for lunch logic
 			all_grades = [9, 10, 11, 12]
 			for grade in all_grades:
 				grade_list = dfwrapper.get_infections_in_lunch(grade)
+				print(grade_list)
 				student_ids = [i[0] for i in grade_list]
 				infected_set = [i[1] for i in grade_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
 				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
+				
 			dfwrapper.update_infection_column(period, all_students)
 		elif period == 5:
+			print('Processing After School')
 			# Unique logic for after school activities
-			all_after_school = dfwrapper.get_extra_list()
+			all_activities = dfwrapper.get_extra_list()
 			for after_scool in all_activities:
 				after_scool_list = dfwrapper.get_infections_after_school(after_scool)
 				student_ids = [i[0] for i in after_scool_list]
@@ -88,6 +94,8 @@ def main():
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
 		else:
+			# Handles the  logic for each infectious Case per class
+			print('Processing Period', period)
 			all_classes = dfwrapper.get_class_list(period)
 			for class_name in all_classes:
 				class_list = dfwrapper.get_infections_in_class(class_name, prev_period, period)
@@ -99,18 +107,11 @@ def main():
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
 		# Get current Data
-		threshold = 0.5
+		threshold = 0.13
 		infection_list = dfwrapper.get_infections_in_period(period)
-		current_infections[i] = probs.get_thresh_hold_infected(threshold, infection_list)
+		current_infections.append(probs.get_thresh_hold_infected(threshold, infection_list))
 		
 	print(current_infections)
-
-	# dfwrapper.get_class_list(1)
-	# dfwrapper.get_student_activity(27)
-	# dfwrapper.get_activity_students("Band")
-	# dfwrapper.get_same_grade_students(11)
-	#dfwrapper.get_teachers_for_class('Physics A', 3)
-
 
 def create_dataframes():
 	# takes csv file name as arg[1]
@@ -148,7 +149,11 @@ def notify_sms(infected_set):
 		msg = 'Hello ' + patient.get('first_name') + '. You may have been exposed to ZBY1. There is a ' + str('') + ' chance that you have been infected.'
 		# NOTE: Only the phone number for Sean Klocko (SN #1) will be notified, as it is the only registered number in the free trial
 		try:
-			client.messages.create(to='+1'+phone_num, from_=sms.TRIAL_NUMBER, body=msg)
+			# FOR THE PURPOSE OF THIS DEMO, WE CAN ONLY TEXT 1 PHONE NUMBER
+			# THIS IS THE ONLY REASON WE HAVE THIS CONDITIONAL STATEMENT IN PLACE
+			if (phone_num == '6472341162'):
+				client.messages.create(to='+1'+phone_num, from_=sms.TRIAL_NUMBER, body=msg)
+				break
 		except Exception as e:
 			print('Student number is not included in the scope of the Twilio free trial') 
 
