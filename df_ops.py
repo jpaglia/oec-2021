@@ -128,5 +128,5 @@ class DfWrapper:
 
 			rate_increase_list.append(increase_value)
 
-		print(str(rate_increase_list))
+		# print(str(rate_increase_list))
 		return rate_increase_list
