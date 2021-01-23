@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 import df_ops
+import twilio_client as sms
 
 # def plot_from_csv(filename):
 # 	csv_data = pd.read_csv(filename)
@@ -47,18 +48,11 @@ def main():
 
 	dfwrapper = df_ops.DfWrapper(student_df, teacher_df, ta_df, zby1_df)
 
-<<<<<<< HEAD
-	# dfwrapper.printStudentHead()
-	# dfwrapper.getsiblings(3)
-	dfwrapper.get_class_list(1)
-=======
 	# dfwrapper.print_student_head()
 	# result = dfwrapper.get_people_in_class('Functions A', 1)
 	# print(result)
 
 	dfwrapper.get_same_grade_students(11)
->>>>>>> 5379b0d98cadf912d02ad82ac2bd454e6743a6c6
-
 def create_dataframes():
 	# takes csv file name as arg[1]
 	#student_csv = sys.argv[1]
@@ -123,7 +117,21 @@ def append_to_file(filename):
 	
 def print_format():
 	return False
-	
+
+# Notifies all people who may have been exposed with their current risk of infection via SMS message
+def notify_sms(infected_set):
+	for i in range(len(infected_set)):
+		studentname = ''
+		phone_num = ''
+		risk = '' + '%'
+		client = Client(sms.ACCOUNT_SID, sms.AUTH_TOKEN)
+		msg = 'Hello ' + patient.get('first_name') + '. You may have been exposed to ZBY1. There is a ' + str('') + ' chance that you have been infected.'
+		# NOTE: Only the phone number for Sean Klocko (SN #1) will be notified, as it is the only registered number in the free trial
+		try:
+			client.messages.create(to='+1'+phone_num, from_=sms.TRIAL_NUMBER, body=msg)
+		except Exception as e:
+			print('Student number is not included in the scope of the Twilio free trial') 
+
 if __name__ == "__main__":
 	# main()
 	# app.run()
