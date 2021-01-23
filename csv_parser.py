@@ -50,6 +50,8 @@ def main():
 	# dfwrapper.printStudentHead()
 	dfwrapper.getsiblings(3)
 
+	dfwrapper.get_same_grade_students(11)
+
 def create_dataframes():
 	# takes csv file name as arg[1]
 	#student_csv = sys.argv[1]

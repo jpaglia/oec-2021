@@ -32,6 +32,11 @@ class DfWrapper:
 		siblings_list.remove(studentid)
 		return siblings_list
 
+	def get_same_grade_students(self, grade):
+		query = self.student_df.loc[self.student_df['Grade'] == grade]
+		students_list = query['Student Number'].values.tolist()
+		return students_list
+
 	def printStudentHead(self):
 		print(self.student_df.head)
 
