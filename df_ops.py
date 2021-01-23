@@ -93,6 +93,24 @@ class DfWrapper:
 		students_list = query['Student Number'].values.tolist()
 		return students_list
 
+	def get_infections_in_period(self, period):
+	# Shift col index based on period number
+	
+		infection_col_name = 'Infection Rate P' + str(period)
+
+		students_in_period = self.student_df[infection_col_name]
+		student_list = students_in_period['Student Number'].values.tolist()
+
+		# Get the infection values for a specific period for a specific class
+		student_infection_list = []
+
+		for i in student_list:
+			rowindex = i - 1
+			infection_value = self.student_df.at[rowindex, infection_col_name]
+			student_infection_list.append((i, infection_value))
+
+		return student_infection_list
+
 	# Get all infections in period 2
 	def get_infections_in_lunch(self, grade):
 		# Get infection rates from the column for period 2
