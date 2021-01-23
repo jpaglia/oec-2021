@@ -22,14 +22,13 @@ class DfWrapper:
 		# Print the resulting dataframe
 		print(str(self.student_df))
 
-
 	# sibilings of person X
 	# common classes of person X in period Y
 	# common afterschool activities of person X
 	# all people in grade X
 	# all people in class C for period Y
 
-	def getsiblings(self, studentid):
+	def get_siblings(self, studentid):
 		rowindex = studentid - 1
 		lastname = self.student_df.at[rowindex, 'Last Name']
 		
@@ -50,7 +49,21 @@ class DfWrapper:
 		return classes
 
 
-	def printStudentHead(self):
+	def print_df_head(self):
 		print(self.student_df.head)
+
+	def get_same_grade_students(self, grade):
+		query = self.student_df.loc[self.student_df['Grade'] == grade]
+		students_list = query['Student Number'].values.tolist()
+		return students_list
+
+	def get_people_in_class(self, classname, period):
+		# Shift col index based on period number
+		# colindex = int(period) + 3
+		period_col_name = 'Period ' + str(period) + ' Class'
+		students_in_class = self.student_df.loc[self.student_df[period_col_name] == classname]
+		student_list = students_in_class['Student Number'].values.tolist()
+
+		return student_list
 
 
