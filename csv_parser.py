@@ -114,45 +114,6 @@ def csv_to_dataframe(filename):
 	dataframe = pd.read_csv(filename, error_bad_lines=False)
 	return dataframe
 
-# OLD TEMPLATE CONTENT - TO BE REMOVED/MODIFIED
-def csv_parser(filename, record_type):
-	with open(filename) as csvfile:
-	#with open(filename, newline='') as csvfile:
-		reader = csv.DictReader(csvfile)
-		for line in reader:
-			# TO-DO: stuff for each type of dataset
-
-			print(line['word'] + ' is ' + line['num'])
-			#print(str(line))
-
-# OLD TEMPLATE CONTENT - TO BE REMOVED/MODIFIED		
-def csv_to_json(filename):
-	#with open(filename) as csvfile:
-	#	reader = csv.DictReader(csvfile)
-		#Stores all contents of csv as json
-	reader = reader(filename)
-	result = json.dumps([row for row in reader])		
-		#Stores array of all elements 'word'
-		#result = json.dumps([row['word'] for row in reader])
-	print(result)
-		
-
-def reader(filename):
-	with open(filename) as csvfile:
-		reader = csv.DictReader(csvfile)
-		return reader
-	
-def write_to_file(filename):
-	file = open(filename,'w+')
-	for i in range(10): #CHANGE THIS BASED ON PROBLEM
-		file.write('Writing this line...')
-	file.close()
-	
-def append_to_file(filename):
-	file = open(filename,'a+')
-	for i in range(10): #CHANGE THIS BASED ON PROBLEM
-		file.write('Appending this line...')
-	file.close()
 	
 def print_format():
 	return False
