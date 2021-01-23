@@ -102,7 +102,7 @@ class DfWrapper:
 		student_infection_list = []
 
 		for index, row in self.student_df.iterrows():
-			rowindex = i - 1
+			# rowindex = i - 1
 			infection_value = row[infection_col_name]
 			student_number = row['Student Number']
 			student_infection_list.append((student_number, infection_value))
