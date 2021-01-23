@@ -72,21 +72,21 @@ class DfWrapper:
 				infection_value = row[extra_col_name]
 			
 			student_number = row['Student Number']
-			entire_infection_list.append((student_number, infection_value, "student"))
+			entire_infection_list.append((student_number, infection_value, "student", row['First Name'], row['Last Name'], row['Phone Number']))
 
 		# 2. Add Teacher entries to the infection list
 		for _, row in self.teacher_df.iterrows():
 			infection_value = row[last_col_name]
 			
 			teacher_number = row['Teacher Number']
-			entire_infection_list.append((teacher_number, infection_value, "teacher"))
+			entire_infection_list.append((teacher_number, infection_value, "teacher", row['First Name'], row['Last Name'], row['Phone Number']))
 
 		# 3. Add Teaching Assistant entries to the infection list
 		for _, row in self.ta_df.iterrows():
 			infection_value = row[last_col_name]
 			
 			ta_number = row['TA Number']
-			entire_infection_list.append((ta_number, infection_value, "teaching assistant"))
+			entire_infection_list.append((ta_number, infection_value, "teaching assistant", row['First Name'], row['Last Name'], row['Phone Number']))
 
 		return entire_infection_list
 
@@ -212,10 +212,23 @@ class DfWrapper:
 		# print(students_list)
 		return students_list
 
-	def get_teacher_infection_rate(self, class_name, period_name):
+	def get_teacher_infection_rate(self, class_name, period):
 		query = self.teacher_df.loc[self.teacher_df['Class'] == class_name]
-		infection_rate = query[period_name].values.tolist()[0]
+		infection_rate = query[period].values.tolist()[0]
+	
+		infection_col_name = 'Infection Rate P' + str(period)
+
+		# Get the infection values for a specific period for a specific class
+		student_infection_list = []
+
+		for index, row in self.student_df.iterrows():
+			infection_value = row[infection_col_name]
+			student_number = row['Student Number']
+			student_infection_list.append((student_number, infection_value))
+
+		return student_infection_list
 		return infection_rate
+
 
 	def print_student_head(self):
 		print(self.student_df.head)
