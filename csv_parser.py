@@ -5,17 +5,8 @@ import plotly
 import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
+import df_ops
 
-from flask import Flask, render_template
-app = Flask(__name__)
-
-@app.route('/graph')
-def index():
-	#student_csv = sys.argv[1]
-	graph = plot_from_csv('outputs/sunflower - output1.csv')
-	return render_template('index.html', plot=graph)
-
-	
 # def plot_from_csv(filename):
 # 	csv_data = pd.read_csv(filename)
 # 	data = [go.Scatter(
@@ -52,8 +43,12 @@ def main():
 	# PARSE THE STUDENT RECORDS
 	#csv_to_json(student_csv)
 	#print(result)
-	create_dataframes()
+	student_df, teacher_df, ta_df, zby1_df = create_dataframes()
 
+	dfwrapper = df_ops.DfWrapper(student_df, teacher_df, ta_df, zby1_df)
+
+	# dfwrapper.printStudentHead()
+	dfwrapper.getsiblings(3)
 
 def create_dataframes():
 	# takes csv file name as arg[1]
@@ -69,7 +64,8 @@ def create_dataframes():
 	teacher_df = csv_to_dataframe(sys.argv[2])
 	ta_df = csv_to_dataframe(sys.argv[3])
 	zby1_df = csv_to_dataframe(sys.argv[4])
-	print(student_df.head)
+	
+	return student_df, teacher_df, ta_df, zby1_df
 
 
 def csv_to_dataframe(filename):
