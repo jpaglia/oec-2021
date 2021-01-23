@@ -25,7 +25,7 @@
 24,Zboncak,Skyla,11,Computer Engineering B,Drama B,Physics B,Art A,N/A,N/A
 25,Stamm,Rebekah,9,Physics B,Art A,Computer Engineering A,Calculus A,N/A,Soccer
 26,Keebler,Reina,10,Computer Engineering B,Drama A,Biology B,Philosophy B,N/A,N/A
-27,Buckridge,Liza,9,Computer Science B,Computer Engineering B,Drama A,Biology B,N/A,"Band,Computer Science Club,Video Game Club"
+27,Buckridge,Liza,9,Computer Science B,Computer Engineering B,Drama A,Biology B,N/A,Band
 28,Schinner,Arjun,9,Humanities A,Calculus B,Computer Engineering A,Physics B,N/A,N/A
 29,Bartell,Dora,9,Biology A,Humanities B,Philosophy A,Functions B,N/A,N/A
 30,Nicolas,Marjolaine,9,Computer Engineering B,Humanities B,Computer Science B,Calculus A,N/A,N/A
@@ -62,12 +62,12 @@
 61,Bartell,Annabelle,10,Functions B,Philosophy B,Drama B,Humanities A,N/A,N/A
 62,Stracke,Philip,10,Calculus B,Art B,Functions B,Philosophy B,N/A,N/A
 63,Fritsch,Ansley,11,Functions A,Drama B,Computer Science B,Art A,N/A,Computer Science Club
-64,Pfannerstill,Amanda,9,Physics B,Philosophy A,Drama A,Functions B,N/A,"Board Game Club,Basketball"
+64,Pfannerstill,Amanda,9,Physics B,Philosophy A,Drama A,Functions B,N/A,Board Game Club
 65,Marquardt,Susie,9,Computer Science A,Functions A,Philosophy A,Physics A,N/A,Football
 66,Dicki,Theresia,9,Physics B,Humanities A,Biology A,Philosophy B,N/A,Football
 67,Carter,Octavia,11,Biology A,Computer Science B,Calculus B,Functions B,N/A,N/A
 68,D'Amore,Roman,11,Physics A,Computer Engineering A,Calculus A,Computer Science A,N/A,N/A
-69,Kessler,Kirsten,11,Art A,Physics A,Computer Engineering A,Philosophy B,N/A,"Band,Video Game Club,Choir"
+69,Kessler,Kirsten,11,Art A,Physics A,Computer Engineering A,Philosophy B,N/A,Band
 70,Durgan,Kelly,9,Drama B,Calculus B,Computer Science A,Biology A,N/A,N/A
 71,Wisozk,Michael,9,Humanities B,Functions A,Computer Science B,Physics A,N/A,N/A
 72,Kris,Emmie,11,Biology B,Calculus A,Drama B,Computer Science B,N/A,N/A
@@ -82,9 +82,9 @@
 81,Cole,Owen,12,Functions A,Art B,Biology B,Computer Science B,N/A,N/A
 82,Paucek,Talon,12,Computer Engineering A,Calculus A,Art B,Humanities A,N/A,N/A
 83,Walker,Stone,12,Computer Science A,Art B,Biology B,Humanities A,N/A,N/A
-84,Robel,Erwin,11,Computer Engineering B,Humanities B,Art A,Computer Science A,N/A,"Soccer,Choir"
+84,Robel,Erwin,11,Computer Engineering B,Humanities B,Art A,Computer Science A,N/A,Soccer
 85,Jacobson,Charlie,10,Computer Engineering B,Biology B,Art A,Physics A,N/A,N/A
-86,Cookie,Jory,11,Art A,Drama B,Biology A,Computer Engineering B,N/A,"Choir,Band,Board Game Club"
+86,Cookie,Jory,11,Art A,Drama B,Biology A,Computer Engineering B,N/A,Choir
 87,O'Hara,Haleigh,12,Humanities A,Calculus A,Art B,Computer Science A,N/A,N/A
 88,Kovacek,Don,12,Humanities B,Computer Engineering A,Physics B,Philosophy B,N/A,N/A
 89,Botsford,Keyshawn,10,Biology B,Drama A,Computer Science A,Humanities A,N/A,N/A
@@ -122,14 +122,14 @@
 121,Flatley,Jordon,10,Physics B,Functions A,Computer Science A,Philosophy B,N/A,N/A
 122,Wunsch,Lonzo,9,Physics A,Computer Science B,Functions B,Computer Engineering A,N/A,N/A
 123,Kihn,Antonia,10,Calculus B,Art B,Physics A,Computer Science A,N/A,N/A
-124,Hansen,Gianni,10,Physics A,Drama A,Calculus B,Biology A,N/A,"Football,Video Game Club"
+124,Hansen,Gianni,10,Physics A,Drama A,Calculus B,Biology A,N/A,Football
 125,Bradtke,Rickie,11,Calculus A,Computer Science A,Philosophy B,Functions B,N/A,N/A
 126,O'Conner,Maude,11,Philosophy A,Functions B,Computer Engineering B,Biology A,N/A,N/A
 127,Kiehn,Bradley,10,Computer Engineering A,Computer Science A,Drama B,Physics A,N/A,N/A
 128,Larson,Ruben,9,Humanities A,Art B,Philosophy B,Calculus B,N/A,N/A
-129,Koepp,Bennie,9,Functions B,Philosophy A,Drama B,Computer Science B,N/A,"Video Game Club,Soccer,Choir"
+129,Koepp,Bennie,9,Functions B,Philosophy A,Drama B,Computer Science B,N/A,Video Game Club
 130,Blick,Mertie,10,Computer Engineering A,Functions B,Philosophy A,Art B,N/A,N/A
-131,Dickinson,Lewis,10,Physics B,Computer Science B,Art B,Functions A,N/A,"Video Game Club,Soccer,Basketball"
+131,Dickinson,Lewis,10,Physics B,Computer Science B,Art B,Functions A,N/A,Video Game Club
 132,Batz,Lilla,9,Art B,Computer Engineering B,Humanities A,Calculus A,N/A,N/A
 133,Nolan,Evelyn,9,Computer Engineering A,Functions A,Art B,Physics A,N/A,N/A
 134,Huel,Lou,9,Philosophy A,Calculus A,Humanities B,Physics A,N/A,Basketball
@@ -170,7 +170,7 @@
 169,Lang,Briana,10,Art B,Calculus A,Physics B,Drama A,N/A,N/A
 170,Boehm,Jarrett,12,Drama B,Art B,Humanities A,Functions A,N/A,Baseball
 171,Rosenbaum,Theresa,9,Biology A,Drama A,Computer Engineering A,Computer Science B,N/A,Soccer
-172,Jakubowski,Haylee,11,Philosophy A,Computer Engineering A,Art A,Computer Science B,N/A,"Board Game Club,Football"
+172,Jakubowski,Haylee,11,Philosophy A,Computer Engineering A,Art A,Computer Science B,N/A,Board Game Club
 173,Gutmann,Weldon,11,Biology B,Physics B,Calculus A,Computer Engineering A,N/A,N/A
 174,Johns,Josefina,9,Art A,Computer Engineering B,Drama A,Calculus A,N/A,Video Game Club
 175,Conroy,Tad,10,Philosophy B,Art A,Calculus A,Drama A,N/A,N/A
@@ -248,7 +248,7 @@
 247,Glover,Audra,12,Functions A,Art A,Biology B,Computer Engineering A,N/A,N/A
 248,Mante,Jaron,12,Physics B,Functions B,Art B,Computer Science A,N/A,N/A
 249,Hodkiewicz,Cale,9,Computer Science A,Drama B,Functions B,Biology B,N/A,Video Game Club
-250,Russel,Deontae,11,Physics B,Computer Engineering B,Biology A,Art A,N/A,"Board Game Club,Soccer"
+250,Russel,Deontae,11,Physics B,Computer Engineering B,Biology A,Art A,N/A,Board Game Club
 251,Abernathy,Brain,9,Art B,Drama A,Physics B,Computer Science A,N/A,N/A
 252,Schultz,Eryn,12,Biology B,Computer Engineering A,Philosophy A,Computer Science A,N/A,N/A
 253,Kassulke,Rocio,12,Art B,Physics B,Computer Engineering B,Calculus B,N/A,N/A
@@ -337,7 +337,7 @@
 336,King,Nellie,12,Biology A,Functions B,Computer Science B,Art A,N/A,N/A
 337,Gleason,Crystel,9,Drama A,Biology A,Computer Science B,Calculus A,N/A,N/A
 338,Hane,Dashawn,12,Functions B,Drama B,Biology B,Computer Science B,N/A,N/A
-339,Kemmer,Ruth,10,Computer Science B,Art A,Philosophy A,Functions A,N/A,"Choir,Board Game Club"
+339,Kemmer,Ruth,10,Computer Science B,Art A,Philosophy A,Functions A,N/A,Choir
 340,Harris,Buddy,12,Functions A,Computer Science B,Humanities A,Drama B,N/A,N/A
 341,Howe,Fannie,10,Humanities B,Drama A,Philosophy A,Biology B,N/A,N/A
 342,Tromp,Kareem,9,Calculus A,Drama A,Computer Engineering B,Functions A,N/A,N/A
@@ -360,7 +360,7 @@
 359,Runolfsdottir,Geovanni,12,Physics A,Computer Engineering A,Biology A,Humanities B,N/A,N/A
 360,Jaskolski,Tracy,12,Art A,Philosophy A,Physics A,Humanities A,N/A,N/A
 361,Jenkins,Jerrell,9,Drama B,Physics B,Functions B,Computer Science A,N/A,N/A
-362,Ankunding,Sonny,12,Humanities B,Computer Engineering A,Computer Science B,Drama A,N/A,"Band,Board Game Club"
+362,Ankunding,Sonny,12,Humanities B,Computer Engineering A,Computer Science B,Drama A,N/A,Band
 363,Hayes,Filomena,11,Biology B,Computer Engineering A,Humanities B,Calculus B,N/A,N/A
 364,Weber,Assunta,11,Calculus B,Computer Engineering A,Physics A,Biology B,N/A,N/A
 365,Larkin,Karl,11,Computer Science A,Physics A,Calculus A,Functions B,N/A,N/A
@@ -401,7 +401,7 @@
 400,Dicki,Stephania,11,Drama B,Humanities A,Functions A,Art A,N/A,N/A
 401,Gerhold,Dante,10,Computer Engineering A,Calculus A,Drama B,Computer Science B,N/A,N/A
 402,Schulist,Alberta,10,Humanities B,Drama B,Physics A,Computer Engineering A,N/A,N/A
-403,Christiansen,Sabryna,12,Calculus A,Humanities B,Physics B,Functions A,N/A,"Badminton,Video Game Club"
+403,Christiansen,Sabryna,12,Calculus A,Humanities B,Physics B,Functions A,N/A,Badminton
 404,Leuschke,Riley,12,Drama A,Biology B,Humanities A,Physics A,N/A,N/A
 405,Bailey,Myles,12,Computer Science A,Biology A,Functions B,Art A,N/A,N/A
 406,Smitham,Spencer,11,Philosophy B,Humanities B,Physics A,Calculus B,N/A,N/A
@@ -445,7 +445,7 @@
 444,Parker,Timmothy,10,Functions B,Humanities B,Biology A,Computer Engineering B,N/A,Football
 445,Mueller,Emily,12,Computer Science A,Physics B,Art B,Calculus A,N/A,N/A
 446,Wilderman,Corrine,9,Calculus B,Physics A,Computer Science A,Art B,N/A,N/A
-447,Hettinger,Karlie,9,Calculus B,Art B,Computer Science B,Humanities A,N/A,"Drama Club,Video Game Club"
+447,Hettinger,Karlie,9,Calculus B,Art B,Computer Science B,Humanities A,N/A,Drama Club
 448,Skiles,Celia,12,Biology B,Functions A,Humanities A,Calculus B,N/A,N/A
 449,Koepp,Tianna,9,Humanities A,Art B,Drama A,Physics A,N/A,N/A
 450,Abbott,Susana,12,Drama A,Computer Engineering A,Art A,Biology A,N/A,Baseball
@@ -470,7 +470,7 @@
 469,Douglas,Carole,11,Philosophy B,Drama B,Humanities A,Biology A,N/A,N/A
 470,Muller,Furman,12,Biology B,Calculus A,Functions B,Physics B,Asthma,N/A
 471,Block,Jace,10,Philosophy B,Biology B,Art B,Physics B,N/A,N/A
-472,Wolff,Layne,11,Philosophy A,Calculus A,Art A,Functions A,N/A,"Badminton,Board Game Club"
+472,Wolff,Layne,11,Philosophy A,Calculus A,Art A,Functions A,N/A,Badminton
 473,Wunsch,Jeanette,11,Computer Science B,Philosophy A,Calculus B,Art B,N/A,Video Game Club
 474,Kertzmann,Roma,12,Functions B,Humanities B,Biology A,Calculus A,N/A,N/A
 475,Kertzmann,Tressa,9,Drama A,Physics B,Art B,Computer Engineering B,N/A,N/A
@@ -576,425 +576,6 @@
 575,Raynor,Ceasar,10,Computer Science B,Calculus B,Philosophy B,Functions A,N/A,Drama Club
 576,Lynch,Anika,12,Computer Science B,Functions B,Humanities B,Biology A,Asthma,N/A
 577,Jacobs,Cale,12,Physics A,Functions B,Philosophy B,Biology A,N/A,N/A
-578,Douglas,Lennie,10,Physics A,Computer Science A,Calculus A,Biology A,N/A,"Board Game Club,Computer Science Club"
+578,Douglas,Lennie,10,Physics A,Computer Science A,Calculus A,Biology A,N/A,Board Game Club
 579,Johnson,Roxane,9,Computer Science A,Functions B,Humanities B,Drama B,N/A,N/A
-580,Hane,Serena,11,Computer Science B,Functions B,Physics A,Computer Engineering A,N/A,"Drama Club,Board Game Club"
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
+580,Hane,Serena,11,Computer Science B,Functions B,Physics A,Computer Engineering A,N/A,Drama Club

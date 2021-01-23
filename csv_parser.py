@@ -57,7 +57,8 @@ def main():
 
 
 	#dfwrapper.get_same_grade_students(11)
-	dfwrapper.get_student_activities(27)
+	dfwrapper.get_student_activity(27)
+	dfwrapper.get_activity_students("Band")
 
 	dfwrapper.get_same_grade_students(11)
 
