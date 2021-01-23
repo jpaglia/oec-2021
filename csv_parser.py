@@ -48,11 +48,12 @@ def main():
 
 	dfwrapper = df_ops.DfWrapper(student_df, teacher_df, ta_df, zby1_df)
 
-	# dfwrapper.print_student_head()
-	# result = dfwrapper.get_people_in_class('Functions A', 1)
-	# print(result)
+	dfwrapper.update_infection_value(1, 5, 0.6)
+	# dfwrapper.get_class_list(1)
+	# dfwrapper.get_student_activity(27)
+	# dfwrapper.get_activity_students("Band")
+	# dfwrapper.get_same_grade_students(11)
 
-	dfwrapper.get_same_grade_students(11)
 def create_dataframes():
 	# takes csv file name as arg[1]
 	#student_csv = sys.argv[1]

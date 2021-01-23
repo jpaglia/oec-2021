@@ -8,16 +8,24 @@ import numpy as np
 
 class DfWrapper:
 	def __init__(self, student_df, teacher_df, ta_df, zby1_df):
-		self.student_df = student_df[student_df['Student Number'].notna()]
-		self.teacher_df = teacher_df[teacher_df['Teacher Number'].notna()]
-		self.ta_df = ta_df[ta_df['Last Name'].notna()]
-		self.zby1_df = zby1_df[zby1_df['Student ID'].notna()]
+		student_df.dropna(subset=['Student Number'], inplace=True)
+		teacher_df.dropna(subset=['Teacher Number'], inplace=True)
+		ta_df.dropna(subset=['Last Name'], inplace=True)
+		zby1_df.dropna(subset=['Student ID'], inplace=True)
+
+		self.student_df = student_df
+		self.teacher_df = teacher_df
+		self.ta_df = ta_df
+		self.zby1_df = zby1_df
 
 		# Add infection rate columns to student df
 		self.student_df['Infection Rate P1'] = 0
-		self.student_df['Infection Rate P2'] = 0
+		self.student_df['Infection Rate P2'] = 0 
+		self.student_df['Infection Rate P2.5'] = 0
 		self.student_df['Infection Rate P3'] = 0
 		self.student_df['Infection Rate P4'] = 0
+		self.student_df['Infection Rate P5'] = 0
+		self.student_df['Infection Rate P6'] = 0
 
 		# Print the resulting dataframe
 		print(str(self.student_df))
@@ -48,6 +56,15 @@ class DfWrapper:
 		classes = self.student_df[period_col_header].tolist()
 		return classes
 
+	# Updates infection % value for a certain student for a certain period
+	# `period` must be in {1, 2, 2.5, 3, 4, 5, 6}
+	# Where 2.5 => lunch, 5 => extra curriculars, and 6 => after school
+	def update_infection_value(self, studentid, period, value):
+		rowindex = studentid - 1
+		infection_col_name = 'Infection Rate P' + str(period)
+		print("col name:<{}>, value={}".format(infection_col_name, value))
+		self.student_df.at[rowindex, infection_col_name] = value
+		print(str(self.student_df.at[rowindex, infection_col_name]))
 
 	def print_df_head(self):
 		print(self.student_df.head)
@@ -65,5 +82,20 @@ class DfWrapper:
 		student_list = students_in_class['Student Number'].values.tolist()
 
 		return student_list
+
+	def get_student_activity(self, studentid):
+		query = self.student_df.loc[self.student_df['Student Number'] == studentid]
+		activity_name = query['Extracurricular Activities'].values.tolist()[0]
+		print(activity_name)
+		return activity_name
+
+	def get_activity_students(self, activity_name):
+		query = self.student_df.loc[self.student_df['Extracurricular Activities'] == activity_name]
+		students_list = query['Student Number'].values.tolist()
+		print(students_list)
+		return students_list
+
+	def print_student_head(self):
+		print(self.student_df.head)
 
 
