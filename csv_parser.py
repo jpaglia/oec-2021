@@ -52,10 +52,10 @@ def main():
 	# PARSE THE STUDENT RECORDS
 	#csv_to_json(student_csv)
 	#print(result)
-	create_dataframe_student()
+	create_dataframes()
 
 
-def create_dataframe_student():
+def create_dataframes():
 	# takes csv file name as arg[1]
 	#student_csv = sys.argv[1]
 	# FILL IN ARGS
@@ -66,13 +66,15 @@ def create_dataframe_student():
 
 	#for csv_filename in sys.argv[1]:
 	student_df = csv_to_dataframe(sys.argv[1])
+	teacher_df = csv_to_dataframe(sys.argv[2])
+	ta_df = csv_to_dataframe(sys.argv[3])
+	zby1_df = csv_to_dataframe(sys.argv[4])
 	print(student_df.head)
 
 
 def csv_to_dataframe(filename):
 	dataframe = pd.read_csv(filename, error_bad_lines=False)
 	return dataframe
-
 
 # OLD TEMPLATE CONTENT - TO BE REMOVED/MODIFIED
 def csv_parser(filename, record_type):
@@ -120,8 +122,8 @@ def print_format():
 if __name__ == "__main__":
 	# main()
 	# app.run()
-	# run command python csv_parser.py Student_Records.csv
-	if (len(sys.argv) != 2):
+	# run command python csv_parser.py Student_Records.csv Teacher_Records.csv Teaching_Assistant_Records.csv ZBY1_Status.csv
+	if (len(sys.argv) != 5):
 		print('Please input data files in the following format:')
 		print('<SCRIPT_NAME> <STUDENT_RECORDS.CSV> <TEACHER_RECORDS.CSV> <TA_RECORDS.CSV> <ZBY1_STATUS_RECORDS.CSV>')
 	else:
