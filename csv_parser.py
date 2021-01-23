@@ -48,8 +48,7 @@ def main():
 	student_df, teacher_df, ta_df, zby1_df = create_dataframes()
 
 	dfwrapper = df_ops.DfWrapper(student_df, teacher_df, ta_df, zby1_df)
-
-
+	
 	# Insert initial infections
 	dfwrapper.update_infection_value(531, 1, 1.0)
 	dfwrapper.update_infection_value(86, 1, 1.0)
@@ -57,6 +56,7 @@ def main():
 
 	#dfwrapper.update_infection_value(1, 5, 0.6)
 	period_arr = [2, 2.5, 3, 4]
+	current_infections = [0, 0, 0, 0]
 	for i in range(len(period_arr)):
 		period = period_arr[i]
 		prev_period = period_arr[i] - 1
@@ -75,6 +75,18 @@ def main():
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
+		elif period == 5:
+			# Unique logic for after school activities
+			all_after_school = dfwrapper.get_extra_list()
+			for after_scool in all_activities:
+				after_scool_list = dfwrapper.get_infections_after_school(after_scool)
+				student_ids = [i[0] for i in after_scool_list]
+				infected_set = [i[1] for i in after_scool_list]
+				unique_increase = dfwrapper.get_rate_increase(student_ids)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase)
+				for i in range(0, len(new_probs)):
+					all_students[student_ids[i]-1] =  new_probs[i]
+			dfwrapper.update_infection_column(period, all_students)
 		else:
 			all_classes = dfwrapper.get_class_list(period)
 			for class_name in all_classes:
@@ -86,11 +98,19 @@ def main():
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
-		print(dfwrapper.student_df)
+		# Get current Data
+		threshold = 0.5
+		infection_list = dfwrapper.get_infections_in_period(period)
+		current_infections[i] = probs.get_thresh_hold_infected(threshold, infection_list)
+		
+	print(current_infections)
+
 	# dfwrapper.get_class_list(1)
 	# dfwrapper.get_student_activity(27)
 	# dfwrapper.get_activity_students("Band")
 	# dfwrapper.get_same_grade_students(11)
+	#dfwrapper.get_teachers_for_class('Physics A', 3)
+
 
 def create_dataframes():
 	# takes csv file name as arg[1]

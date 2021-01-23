@@ -183,6 +183,17 @@ class DfWrapper:
 	def print_student_head(self):
 		print(self.student_df.head)
 
+	def get_teachers_for_class(self, class_name, period):
+		period_header = 'Period ' + str(period) + ' Class'
+		query_teacher = self.teacher_df.loc[self.teacher_df['Class'] == class_name]
+		teacher_id = query_teacher['Teacher Number'].values.tolist()[0]
+		query_ta = self.ta_df.loc[self.ta_df[period_header] == class_name]
+		ta_id = query_ta['TA Number'].values.tolist()[0]
+		result_list = []
+		result_list.append(teacher_id)
+		result_list.append(ta_id)
+		return result_list
+
 	def get_rate_increase(self, student_list):
 		rate_increase_list = []
 		# Iterate through student list
