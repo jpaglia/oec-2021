@@ -51,7 +51,8 @@ def main():
 	# result = dfwrapper.get_people_in_class('Functions A', 1)
 	# print(result)
 
-	dfwrapper.get_same_grade_students(11)
+	#dfwrapper.get_same_grade_students(11)
+	dfwrapper.get_student_activities(27)
 
 def create_dataframes():
 	# takes csv file name as arg[1]
