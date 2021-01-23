@@ -55,7 +55,8 @@ def main():
 	dfwrapper.update_infection_value(86, 1, 1.0)
 	dfwrapper.update_infection_value(131, 1, 1.0)
 
-	dfwrapper.get_rate_increase([1, 2, 3, 12])
+	#dfwrapper.get_rate_increase([1, 2, 3, 12])
+	dfwrapper.get_teacher_infection_rate('Physics A', 'Infection Rate P1')
 
 	# dfwrapper.get_class_list(1)
 	# dfwrapper.get_student_activity(27)
