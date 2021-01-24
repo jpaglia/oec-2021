@@ -266,8 +266,6 @@ class DfWrapper:
 		query_teacher = self.teacher_df.loc[self.teacher_df['Class'] == class_name]
 		teacher_infection = query_teacher[infection_period_header].values.tolist()[0]
 		teacher_id = query_teacher['Teacher Number'].values.tolist()[0]
-		print("Teacher infection: {}".format(teacher_infection))
-		print("teach id: {}".format(teacher_id))
 		
 		return (teacher_id, teacher_infection)
 
