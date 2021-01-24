@@ -93,7 +93,6 @@ class DfWrapper:
 				for i in siblings_list:
 					self.update_infection_value(i, 5, 0.1)
 
-
 		return entire_infection_list
 
 	# Get a list of all the classes within a period `period`
@@ -280,7 +279,7 @@ class DfWrapper:
 
 		query_ta = self.ta_df.loc[self.ta_df['class_header'] == ta_class]
 
-		ta_infection = query_ta[infection_period_header].values.tolist()[0]
+		ta_infection = query_ta[infection_col_name].values.tolist()[0]
 		ta_id = query_ta['TA Number'].values.tolist()[0]
 
 		return (ta_id, )
