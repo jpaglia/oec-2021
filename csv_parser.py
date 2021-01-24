@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 import df_ops
+from twilio.rest import Client
 import twilio_client as sms
 import probs
 import matplotlib.pyplot as plt
@@ -145,19 +146,18 @@ def print_format():
 # Notifies all people who may have been exposed with their current risk of infection via SMS message
 def notify_sms(infected_set, threshold):
 	for i in range(len(infected_set)):
-		
 		if (infected_set[i][1] > threshold):
-			studentname = infected_set[i][3] + infected_set[i][4]
+			studentname = infected_set[i][3] + ' ' + infected_set[i][4]
 			phone_num = infected_set[i][5]
-			risk = str(infected_set[i][1]) + '%'
+			risk = str(round(infected_set[i][1],3) * 100) + '%'
 			client = Client(sms.ACCOUNT_SID, sms.AUTH_TOKEN)
 			msg = 'Hello ' + studentname + '. You may have been exposed to ZBY1. There is a ' + risk + ' chance that you have been infected.'
 			# NOTE: Only the phone number for Sean Klocko (SN #1) will be notified, as it is the only registered number in the free trial
 			try:
 				# FOR THE PURPOSE OF THIS DEMO, WE CAN ONLY TEXT 1 PHONE NUMBER
-				# THIS IS THE ONLY REASON WE HAVE THIS CONDITIONAL STATEMENT IN PLACE
-				if (phone_num == '6472341162'):
-					client.messages.create(to='+1'+phone_num, from_=sms.TRIAL_NUMBER, body=msg)
+				# THIS IS THE ONLY REASON WE HAVE THIS CONDITIONAL STATEMENT IN PLACE (SAME WITH THE BREAK)
+				if (str(phone_num) == '6472341162'):
+					client.messages.create(to='+1'+str(phone_num), from_=sms.TRIAL_NUMBER, body=msg)
 					break
 			except Exception as e:
 				print('Student number is not included in the scope of the Twilio free trial') 
