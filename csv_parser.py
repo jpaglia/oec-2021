@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 import df_ops
+from twilio.rest import Client
 import twilio_client as sms
 import probs
 import matplotlib.pyplot as plt
@@ -50,6 +51,7 @@ def main():
 
 	dfwrapper = df_ops.DfWrapper(student_df, teacher_df, ta_df, zby1_df)
 	
+	dfwrapper.get_teachers_for_class("Physics A", 3, 4)
 	# Insert initial infections
 	# Holds the initial Data setup
 	print('Processing Period 1')
@@ -75,11 +77,10 @@ def main():
 			all_grades = [9, 10, 11, 12]
 			for grade in all_grades:
 				grade_list = dfwrapper.get_infections_in_lunch(grade)
-				print(grade_list)
 				student_ids = [i[0] for i in grade_list]
 				infected_set = [i[1] for i in grade_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 				
@@ -88,12 +89,12 @@ def main():
 			print('Processing After School')
 			# Unique logic for after school activities
 			all_activities = dfwrapper.get_extra_list()
-			for after_scool in all_activities:
-				after_scool_list = dfwrapper.get_infections_after_school(after_scool)
-				student_ids = [i[0] for i in after_scool_list]
-				infected_set = [i[1] for i in after_scool_list]
+			for after_school in all_activities:
+				after_school_list = dfwrapper.get_infections_after_school(after_school)
+				student_ids = [i[0] for i in after_school_list]
+				infected_set = [i[1] for i in after_school_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
@@ -106,7 +107,8 @@ def main():
 				student_ids = [i[0] for i in class_list]
 				infected_set = [i[1] for i in class_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase)
+
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, class_name, period)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
@@ -123,6 +125,7 @@ def main():
 		current_infections3.append(probs.get_thresh_hold_infected(threshold3, infection_list))
 		current_infections4.append(probs.get_thresh_hold_infected(threshold4, infection_list))
 	
+	# print the plot using various thresholds
 	plt.plot(['Period 1', 'Period 2', 'Lunch', 'Period 3', 'Period 4', 'After School'], current_infections1, color='red', label='Threshold 0.10')
 	plt.plot(['Period 1', 'Period 2', 'Lunch', 'Period 3', 'Period 4', 'After School'], current_infections2, color='purple', label='Threshold 0.13')
 	plt.plot(['Period 1', 'Period 2', 'Lunch', 'Period 3', 'Period 4', 'After School'], current_infections3, color='blue', label='Threshold 0.16')
@@ -132,7 +135,9 @@ def main():
 	plt.ylabel('Number of Exposures')
 	plt.title('Period vs. Number of Exposures')
 	plt.show()
-	print(current_infections1)
+
+	output_eod = dfwrapper.get_eod_infections()
+	notify_sms(output_eod, threshold1)
 
 def create_dataframes():
 	# takes csv file name as arg[1]
@@ -161,18 +166,23 @@ def print_format():
 	return False
 
 # Notifies all people who may have been exposed with their current risk of infection via SMS message
-def notify_sms(infected_set):
+def notify_sms(infected_set, threshold):
 	for i in range(len(infected_set)):
-		studentname = ''
-		phone_num = ''
-		risk = '' + '%'
-		client = Client(sms.ACCOUNT_SID, sms.AUTH_TOKEN)
-		msg = 'Hello ' + patient.get('first_name') + '. You may have been exposed to ZBY1. There is a ' + str('') + ' chance that you have been infected.'
-		# NOTE: Only the phone number for Sean Klocko (SN #1) will be notified, as it is the only registered number in the free trial
-		try:
-			client.messages.create(to='+1'+phone_num, from_=sms.TRIAL_NUMBER, body=msg)
-		except Exception as e:
-			print('Student number is not included in the scope of the Twilio free trial') 
+		if (infected_set[i][1] > threshold):
+			studentname = infected_set[i][3] + ' ' + infected_set[i][4]
+			phone_num = infected_set[i][5]
+			risk = str(round(infected_set[i][1],3) * 100) + '%'
+			client = Client(sms.ACCOUNT_SID, sms.AUTH_TOKEN)
+			msg = 'Hello ' + studentname + '. You may have been exposed to ZBY1. There is a ' + risk + ' chance that you have been infected.'
+			# NOTE: Only the phone number for Sean Klocko (SN #1) will be notified, as it is the only registered number in the free trial
+			try:
+				# FOR THE PURPOSE OF THIS DEMO, WE CAN ONLY TEXT 1 PHONE NUMBER
+				# THIS IS THE ONLY REASON WE HAVE THIS CONDITIONAL STATEMENT IN PLACE (SAME WITH THE BREAK)
+				if (str(phone_num) == '6472341162'):
+					client.messages.create(to='+1'+str(phone_num), from_=sms.TRIAL_NUMBER, body=msg)
+					break
+			except Exception as e:
+				print('Student number is not included in the scope of the Twilio free trial') 
 
 if __name__ == "__main__":
 	# main()

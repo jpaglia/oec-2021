@@ -33,6 +33,12 @@ class DfWrapper:
 		self.teacher_df['Infection Rate P3'] = 0.0
 		self.teacher_df['Infection Rate P4'] = 0.0
 
+		# Add infection rate columns to teacher df
+		self.ta_df['Infection Rate P1'] = 0.0
+		self.ta_df['Infection Rate P2'] = 0.0
+		self.ta_df['Infection Rate P3'] = 0.0
+		self.ta_df['Infection Rate P4'] = 0.0
+
 		# Print the resulting dataframe
 		print(str(self.student_df))
 
@@ -51,6 +57,38 @@ class DfWrapper:
 		siblings_list.remove(studentid)
 
 		return siblings_list
+
+	def get_eod_infections(self):	
+		extra_col_name = 'Infection Rate P5'
+		last_col_name = 'Infection Rate P4'
+
+		# Get the infection values for a specific period for a specific class
+		entire_infection_list = []
+
+		# 1. Add student entries to the infection list
+		for _, row in self.student_df.iterrows():
+			infection_value = row[last_col_name]
+			if str(row[extra_col_name]) != "nan":
+				infection_value = row[extra_col_name]
+			
+			student_number = row['Student Number']
+			entire_infection_list.append((student_number, infection_value, "student"))
+
+		# 2. Add Teacher entries to the infection list
+		for _, row in self.teacher_df.iterrows():
+			infection_value = row[last_col_name]
+			
+			teacher_number = row['Teacher Number']
+			entire_infection_list.append((teacher_number, infection_value, "teacher"))
+
+		# 3. Add Teaching Assistant entries to the infection list
+		for _, row in self.ta_df.iterrows():
+			infection_value = row[last_col_name]
+			
+			ta_number = row['TA Number']
+			entire_infection_list.append((ta_number, infection_value, "teaching assistant"))
+
+		return entire_infection_list
 
 	# Get a list of all the classes within a period `period`
 	# `period` must be in {1,2,3,4}
@@ -75,10 +113,12 @@ class DfWrapper:
 		infection_col_name = 'Infection Rate P' + str(period)
 		
 		self.student_df.at[rowindex, infection_col_name] = str(value)
+
+	def update_teacher_infection_value(self, teacherid, period, value):
+		rowindex = teacherid - 1
+		infection_col_name = 'Infection Rate P' + str(period)
 		
-		# print(self.student_df.head)
-		# print("Actual value:{}".format(str(self.student_df.at[rowindex, infection_col_name])))
-		# print("col name:<{}>, value={}".format(infection_col_name, value))
+		self.teacher_df.at[rowindex, infection_col_name] = str(value)
 
 	# Updates infection % value for an entire column for a specific period
 	def update_infection_column(self, period, column):
@@ -182,19 +222,36 @@ class DfWrapper:
 	def print_student_head(self):
 		print(self.student_df.head)
 
-	def get_teachers_for_class(self, class_name, period):
-		if (class_name != ''):
-			period_header = 'Period ' + str(period) + ' Class'
-			query_teacher = self.teacher_df.loc[self.teacher_df['Class'] == class_name]
-			teacher_id = query_teacher['Teacher Number'].values.tolist()[0]
-			query_ta = self.ta_df.loc[self.ta_df[period_header] == class_name]
-			ta_id = query_ta['TA Number'].values.tolist()[0]
-			result_list = []
-			result_list.append(teacher_id)
-			result_list.append(ta_id)
-			return result_list
-		else:
-			return []
+	def get_teachers_for_class(self, class_name, prev_period, curr_period):
+		period_header = 'Period ' + str(curr_period) + ' Class'
+		infection_period_header = 'Infection Rate P' + str(prev_period)
+
+		query_teacher = self.teacher_df.loc[self.teacher_df['Class'] == class_name]
+		teacher_infection = query_teacher[infection_period_header].values.tolist()[0]
+		teacher_id = query_teacher['Teacher Number'].values.tolist()[0]
+		print("Teacher infection: {}".format(teacher_infection))
+		print("teach id: {}".format(teacher_id))
+		
+		return (teacher_id, teacher_infection)
+
+	def get_ta_for_class(self, ta_class, prev_period, curr_period):
+	# Shift col index based on period number
+		infection_col_name = 'Infection Rate P' + str(prev_period)
+
+		# Get the infection values for a specific period for a specific class
+
+		for index, row in self.student_df.iterrows():
+			infection_value = row[infection_col_name]
+			student_number = row['Student Number']
+			student_infection_list.append((student_number, infection_value))
+
+		return student_infection_list
+		# query_ta = self.ta_df.loc[self.ta_df[period_header] == class_name]
+		# ta_id = query_ta['TA Number'].values.tolist()[0]
+		# result_list = []
+		# result_list.append(teacher_id)
+		# result_list.append(ta_id)
+		# return result_list
 
 	def get_rate_increase(self, student_list):
 		rate_increase_list = []
