@@ -141,7 +141,7 @@ def notify_sms(infected_set, threshold):
 		if (infected_set[i][1] > threshold):
 			studentname = infected_set[i][3] + ' ' + infected_set[i][4]
 			phone_num = infected_set[i][5]
-			risk = str(round(infected_set[i][1],3) * 100) + '%'
+			risk = str(round(infected_set[i][1],2) * 100) + '%'
 			client = Client(sms.ACCOUNT_SID, sms.AUTH_TOKEN)
 			msg = 'Hello ' + studentname + '. You may have been exposed to ZBY1. There is a ' + risk + ' chance that you have been infected.'
 			# NOTE: Only the phone number for Sean Klocko (SN #1) will be notified, as it is the only registered number in the free trial
