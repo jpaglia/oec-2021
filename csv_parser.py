@@ -58,7 +58,11 @@ def main():
 	dfwrapper.update_infection_value(131, 1, 1.0)
 	
 	period_arr = [2, 2.5, 3, 4, 5]
-	current_infections = []
+	current_infections1 = [4]
+	current_infections2 = [4]
+	current_infections3 = [4]
+	current_infections4 = [4]
+
 	for i in range(len(period_arr)):
 		period = period_arr[i]
 		prev_period = period_arr[i] - 1
@@ -106,12 +110,29 @@ def main():
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
-		# Get current Data
-		threshold = 0.13
-		infection_list = dfwrapper.get_infections_in_period(period)
-		current_infections.append(probs.get_thresh_hold_infected(threshold, infection_list))
 		
-	print(current_infections)
+		# Get current Data
+		threshold1 = 0.10
+		threshold2 = 0.13
+		threshold3 = 0.16
+		threshold4 = 0.19
+
+		infection_list = dfwrapper.get_infections_in_period(period)
+		current_infections1.append(probs.get_thresh_hold_infected(threshold1, infection_list))
+		current_infections2.append(probs.get_thresh_hold_infected(threshold2, infection_list))
+		current_infections3.append(probs.get_thresh_hold_infected(threshold3, infection_list))
+		current_infections4.append(probs.get_thresh_hold_infected(threshold4, infection_list))
+	
+	plt.plot(['Period 1', 'Period 2', 'Lunch', 'Period 3', 'Period 4', 'After School'], current_infections1, color='red', label='Threshold 0.10')
+	plt.plot(['Period 1', 'Period 2', 'Lunch', 'Period 3', 'Period 4', 'After School'], current_infections2, color='purple', label='Threshold 0.13')
+	plt.plot(['Period 1', 'Period 2', 'Lunch', 'Period 3', 'Period 4', 'After School'], current_infections3, color='blue', label='Threshold 0.16')
+	plt.plot(['Period 1', 'Period 2', 'Lunch', 'Period 3', 'Period 4', 'After School'], current_infections4, color='green', label='Threshold 0.19')
+	plt.legend(loc='upper left')
+	plt.xlabel('Period')
+	plt.ylabel('Number of Exposures')
+	plt.title('Period vs. Number of Exposures')
+	plt.show()
+	print(current_infections1)
 
 def create_dataframes():
 	# takes csv file name as arg[1]
