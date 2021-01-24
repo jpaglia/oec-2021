@@ -99,6 +99,7 @@ class DfWrapper:
 		classes = self.student_df[period_col_header].tolist()
 		return classes
 
+	# Get list of extracurricular activities
 	def get_extra_list(self):
 		activities = self.student_df['Extracurricular Activities'].tolist()
 		activities = list(set(activities))
@@ -113,6 +114,7 @@ class DfWrapper:
 		
 		self.student_df.at[rowindex, infection_col_name] = str(value)
 
+	# Updates teacher infection value
 	def update_teacher_infection_value(self, teacherid, period, value):
 		rowindex = teacherid - 1
 		infection_col_name = 'Infection Rate P' + str(period)
@@ -127,6 +129,7 @@ class DfWrapper:
 	def print_df_head(self):
 		print(self.student_df.head)
 
+	# Get the same grade students
 	def get_same_grade_students(self, grade):
 		query = self.student_df.loc[self.student_df['Grade'] == grade]
 		students_list = query['Student Number'].values.tolist()
@@ -165,6 +168,7 @@ class DfWrapper:
 
 		return student_infection_list
 
+	# Get infections after school
 	def get_infections_after_school(self, extracurricular):
 		# Get infection rates from the column for period 2
 		infection_col_name = 'Infection Rate P4'
@@ -182,6 +186,7 @@ class DfWrapper:
 
 		return student_infection_list
 
+	# Get infections rate of student in a class 
 	def get_infections_in_class(self, classname, prev_period, curr_period):
 		# Shift col index based on period number
 
@@ -201,18 +206,21 @@ class DfWrapper:
 
 		return student_infection_list
 
+	# Get the activity the student is a part of
 	def get_student_activity(self, studentid):
 		query = self.student_df.loc[self.student_df['Student Number'] == studentid]
 		activity_name = query['Extracurricular Activities'].values.tolist()[0]
 		# print(activity_name)
 		return activity_name
 
+	# Get the students that partake in a specified activity
 	def get_activity_students(self, activity_name):
 		query = self.student_df.loc[self.student_df['Extracurricular Activities'] == activity_name]
 		students_list = query['Student Number'].values.tolist()
 		# print(students_list)
 		return students_list
 
+	# Get the teacher infection rate
 	def get_teacher_infection_rate(self, class_name, period_name):
 		query = self.teacher_df.loc[self.teacher_df['Class'] == class_name]
 		infection_rate = query[period_name].values.tolist()[0]
@@ -221,6 +229,7 @@ class DfWrapper:
 	def print_student_head(self):
 		print(self.student_df.head)
 
+	# Get the teacher for a given class
 	def get_teachers_for_class(self, class_name, prev_period, curr_period):
 		period_header = 'Period ' + str(curr_period) + ' Class'
 		infection_period_header = 'Infection Rate P' + str(prev_period)
@@ -252,6 +261,7 @@ class DfWrapper:
 		# result_list.append(ta_id)
 		# return result_list
 
+	# Gets the rate increase based on the age and the medical condition of the student
 	def get_rate_increase(self, student_list):
 		rate_increase_list = []
 		# Iterate through student list
