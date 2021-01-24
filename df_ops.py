@@ -120,6 +120,12 @@ class DfWrapper:
 		
 		self.teacher_df.at[rowindex, infection_col_name] = str(value)
 
+	def update_ta_infection_value(self, ta_id, period, value):
+		rowindex = ta_id - 1
+		infection_col_name = 'Infection Rate P' + str(period)
+		
+		self.ta_df.at[rowindex, infection_col_name] = str(value)
+
 	# Updates infection % value for an entire column for a specific period
 	def update_infection_column(self, period, column):
 		infection_col_name = 'Infection Rate P' + str(period)
