@@ -32,11 +32,11 @@ def update_with_factor(prev_probability, percent_increase):
   return new_prob
 
 
-def get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, class_name, period):
+def get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, class_name, prev_period, current_period):
   # Steps of Algorithm
   # 1.) First get the base infection rate for an average student
   # 2.) Get the unique probability by increasing that amount by their specific conditions
-  # teacher_infection = dfwrapper.get_teachers_for_class(class_name, period)
+  teacher_infection = dfwrapper.get_teachers_for_class(class_name, prev_period, current_period)
   # Also have to consider teachers and TA's as well
   base_infection_amount = calculate_base_prob(infected_set)
   unique_infection_prob = []
