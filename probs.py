@@ -37,7 +37,7 @@ def update_with_factor(prev_probability, percent_increase, period):
   if period == 2 or period == 4:
     new_percent_increase += 0.25 # Our additional factor for dirty surfaces
   if period == 2.5:
-    new_percent_increase += 1
+    new_percent_increase += 1 # Additional factor of 100% increase for common eating space
   
   new_prob = prev_probability/(prev_probability + (1/new_percent_increase)*(1-prev_probability))
   return new_prob
