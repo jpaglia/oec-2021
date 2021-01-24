@@ -50,6 +50,7 @@ def main():
 
 	dfwrapper = df_ops.DfWrapper(student_df, teacher_df, ta_df, zby1_df)
 	
+	dfwrapper.get_teachers_for_class("Physics A", 3, 4)
 	# Insert initial infections
 	# Holds the initial Data setup
 	print('Processing Period 1')
