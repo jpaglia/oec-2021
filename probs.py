@@ -50,7 +50,7 @@ def get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, clas
 
   # Update teacher Data
   if not class_name == '':
-    dfwrapper.get_teachers_for_class(teacher_info[0], base_infection_amount)
+    dfwrapper.update_teacher_infection_value(teacher_info[0], current_period, base_infection_amount)
 
   unique_infection_prob = []
   for index in range(0, len(infected_set)):
