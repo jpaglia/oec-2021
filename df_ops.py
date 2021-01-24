@@ -113,10 +113,12 @@ class DfWrapper:
 		infection_col_name = 'Infection Rate P' + str(period)
 		
 		self.student_df.at[rowindex, infection_col_name] = str(value)
+
+	def update_teacher_infection_value(self, teacherid, period, value):
+		rowindex = teacherid - 1
+		infection_col_name = 'Infection Rate P' + str(period)
 		
-		# print(self.student_df.head)
-		# print("Actual value:{}".format(str(self.student_df.at[rowindex, infection_col_name])))
-		# print("col name:<{}>, value={}".format(infection_col_name, value))
+		self.teacher_df.at[rowindex, infection_col_name] = str(value)
 
 	# Updates infection % value for an entire column for a specific period
 	def update_infection_column(self, period, column):
@@ -226,9 +228,24 @@ class DfWrapper:
 
 		query_teacher = self.teacher_df.loc[self.teacher_df['Class'] == class_name]
 		teacher_infection = query_teacher[infection_period_header].values.tolist()[0]
+		teacher_id = query_teacher['Teacher Number'].values.tolist()[0]
 		print("Teacher infection: {}".format(teacher_infection))
+		print("teach id: {}".format(teacher_id))
 		
-		return teacher_infection
+		return (teacher_id, teacher_infection)
+
+	def get_ta_for_class(self, ta_class, prev_period, curr_period):
+	# Shift col index based on period number
+		infection_col_name = 'Infection Rate P' + str(prev_period)
+
+		# Get the infection values for a specific period for a specific class
+
+		for index, row in self.student_df.iterrows():
+			infection_value = row[infection_col_name]
+			student_number = row['Student Number']
+			student_infection_list.append((student_number, infection_value))
+
+		return student_infection_list
 		# query_ta = self.ta_df.loc[self.ta_df[period_header] == class_name]
 		# ta_id = query_ta['TA Number'].values.tolist()[0]
 		# result_list = []
