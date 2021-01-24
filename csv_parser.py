@@ -75,7 +75,7 @@ def main():
 				student_ids = [i[0] for i in grade_list]
 				infected_set = [i[1] for i in grade_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfswrapper, 0, 0)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 				
@@ -89,7 +89,7 @@ def main():
 				student_ids = [i[0] for i in after_school_list]
 				infected_set = [i[1] for i in after_school_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfswrapper, 0, 0)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
@@ -113,6 +113,8 @@ def main():
 		current_infections.append(probs.get_thresh_hold_infected(threshold, infection_list))
 		
 	print(current_infections)
+	output_eod = dfwrapper.get_eod_infections()
+	notify_sms(output_eod, 0.13)
 
 def create_dataframes():
 	# takes csv file name as arg[1]
@@ -141,22 +143,24 @@ def print_format():
 	return False
 
 # Notifies all people who may have been exposed with their current risk of infection via SMS message
-def notify_sms(infected_set):
+def notify_sms(infected_set, threshold):
 	for i in range(len(infected_set)):
-		studentname = ''
-		phone_num = ''
-		risk = '' + '%'
-		client = Client(sms.ACCOUNT_SID, sms.AUTH_TOKEN)
-		msg = 'Hello ' + patient.get('first_name') + '. You may have been exposed to ZBY1. There is a ' + str('') + ' chance that you have been infected.'
-		# NOTE: Only the phone number for Sean Klocko (SN #1) will be notified, as it is the only registered number in the free trial
-		try:
-			# FOR THE PURPOSE OF THIS DEMO, WE CAN ONLY TEXT 1 PHONE NUMBER
-			# THIS IS THE ONLY REASON WE HAVE THIS CONDITIONAL STATEMENT IN PLACE
-			if (phone_num == '6472341162'):
-				client.messages.create(to='+1'+phone_num, from_=sms.TRIAL_NUMBER, body=msg)
-				break
-		except Exception as e:
-			print('Student number is not included in the scope of the Twilio free trial') 
+		
+		if (infected_set[i][1] > threshold):
+			studentname = infected_set[i][3] + infected_set[i][4]
+			phone_num = infected_set[i][5]
+			risk = str(infected_set[i][1]) + '%'
+			client = Client(sms.ACCOUNT_SID, sms.AUTH_TOKEN)
+			msg = 'Hello ' + studentname + '. You may have been exposed to ZBY1. There is a ' + risk + ' chance that you have been infected.'
+			# NOTE: Only the phone number for Sean Klocko (SN #1) will be notified, as it is the only registered number in the free trial
+			try:
+				# FOR THE PURPOSE OF THIS DEMO, WE CAN ONLY TEXT 1 PHONE NUMBER
+				# THIS IS THE ONLY REASON WE HAVE THIS CONDITIONAL STATEMENT IN PLACE
+				if (phone_num == '6472341162'):
+					client.messages.create(to='+1'+phone_num, from_=sms.TRIAL_NUMBER, body=msg)
+					break
+			except Exception as e:
+				print('Student number is not included in the scope of the Twilio free trial') 
 
 if __name__ == "__main__":
 	# main()
