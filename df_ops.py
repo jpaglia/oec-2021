@@ -91,7 +91,7 @@ class DfWrapper:
 			if i[2] == "student":
 				siblings_list = self.get_siblings(i[0])
 				for i in siblings_list:
-					update_infection_value(studentid, 5, 0.1)
+					self.update_infection_value(i, 5, 0.1)
 
 
 		return entire_infection_list
