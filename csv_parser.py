@@ -11,36 +11,6 @@ import twilio_client as sms
 import probs
 import matplotlib.pyplot as plt
 
-# def plot_from_csv(filename):
-# 	csv_data = pd.read_csv(filename)
-# 	data = [go.Scatter(
-# 		x = csv_data[1],
-# 		y = csv_data[2],
-# 		mode = 'markers',
-# 		#text = csv_data['word']
-# 	)]
-	
-# 	fig = go.Figure(data)
-	
-# 	fig.update_layout(
-# 		xaxis_title='Word from CSV',
-# 		yaxis_title='Number from CSV',
-# 		font=dict(
-# 			family='Arial, monospace',
-# 			size=16
-# 			#color="#7f7f7f"
-# 		),
-# 		title = {
-#         'text': 'A Plot for Sample Data from data.csv',
-#         'y':0.9,
-#         'x':0.5,
-#         'xanchor': 'center',
-#         'yanchor': 'top'}
-# 	)
-
-# 	graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-# 	return graphJSON
-
 SCHOOL_SIZE = 580	
 	
 def main():
@@ -60,7 +30,11 @@ def main():
 	dfwrapper.update_infection_value(131, 1, 1.0)
 	
 	period_arr = [2, 2.5, 3, 4, 5]
-	current_infections = []
+	current_infections1 = [4]
+	current_infections2 = [4]
+	current_infections3 = [4]
+	current_infections4 = [4]
+
 	for i in range(len(period_arr)):
 		period = period_arr[i]
 		prev_period = period_arr[i] - 1
@@ -76,7 +50,7 @@ def main():
 				student_ids = [i[0] for i in grade_list]
 				infected_set = [i[1] for i in grade_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, 0, 0)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, '', 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 				
@@ -90,7 +64,7 @@ def main():
 				student_ids = [i[0] for i in after_school_list]
 				infected_set = [i[1] for i in after_school_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, 0, 0)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, '', 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
@@ -104,18 +78,36 @@ def main():
 				infected_set = [i[1] for i in class_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
 
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, class_name, period)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, class_name, prev_period, period)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
-		# Get current Data
-		threshold = 0.13
-		infection_list = dfwrapper.get_infections_in_period(period)
-		current_infections.append(probs.get_thresh_hold_infected(threshold, infection_list))
 		
-	print(current_infections)
+		# Get current Data
+		threshold1 = 0.10
+		threshold2 = 0.13
+		threshold3 = 0.16
+		threshold4 = 0.19
+
+		infection_list = dfwrapper.get_infections_in_period(period)
+		current_infections1.append(probs.get_thresh_hold_infected(threshold1, infection_list))
+		current_infections2.append(probs.get_thresh_hold_infected(threshold2, infection_list))
+		current_infections3.append(probs.get_thresh_hold_infected(threshold3, infection_list))
+		current_infections4.append(probs.get_thresh_hold_infected(threshold4, infection_list))
+	
+	# print the plot using various thresholds
+	plt.plot(['Period 1', 'Period 2', 'Lunch', 'Period 3', 'Period 4', 'After School'], current_infections1, color='red', label='Threshold 0.10')
+	plt.plot(['Period 1', 'Period 2', 'Lunch', 'Period 3', 'Period 4', 'After School'], current_infections2, color='purple', label='Threshold 0.13')
+	plt.plot(['Period 1', 'Period 2', 'Lunch', 'Period 3', 'Period 4', 'After School'], current_infections3, color='blue', label='Threshold 0.16')
+	plt.plot(['Period 1', 'Period 2', 'Lunch', 'Period 3', 'Period 4', 'After School'], current_infections4, color='green', label='Threshold 0.19')
+	plt.legend(loc='upper left')
+	plt.xlabel('Period')
+	plt.ylabel('Number of Exposures')
+	plt.title('Period vs. Number of Exposures')
+	plt.show()
+
 	output_eod = dfwrapper.get_eod_infections()
-	notify_sms(output_eod, 0.13)
+	notify_sms(output_eod, threshold1)
 
 def create_dataframes():
 	# takes csv file name as arg[1]
