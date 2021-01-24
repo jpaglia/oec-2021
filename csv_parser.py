@@ -11,36 +11,6 @@ import twilio_client as sms
 import probs
 import matplotlib.pyplot as plt
 
-# def plot_from_csv(filename):
-# 	csv_data = pd.read_csv(filename)
-# 	data = [go.Scatter(
-# 		x = csv_data[1],
-# 		y = csv_data[2],
-# 		mode = 'markers',
-# 		#text = csv_data['word']
-# 	)]
-	
-# 	fig = go.Figure(data)
-	
-# 	fig.update_layout(
-# 		xaxis_title='Word from CSV',
-# 		yaxis_title='Number from CSV',
-# 		font=dict(
-# 			family='Arial, monospace',
-# 			size=16
-# 			#color="#7f7f7f"
-# 		),
-# 		title = {
-#         'text': 'A Plot for Sample Data from data.csv',
-#         'y':0.9,
-#         'x':0.5,
-#         'xanchor': 'center',
-#         'yanchor': 'top'}
-# 	)
-
-# 	graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-# 	return graphJSON
-
 SCHOOL_SIZE = 580	
 	
 def main():
@@ -80,7 +50,7 @@ def main():
 				student_ids = [i[0] for i in grade_list]
 				infected_set = [i[1] for i in grade_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, 0, 0)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, '', 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 				
@@ -94,7 +64,7 @@ def main():
 				student_ids = [i[0] for i in after_school_list]
 				infected_set = [i[1] for i in after_school_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, 0, 0)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, '', 0, 0)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
@@ -108,7 +78,7 @@ def main():
 				infected_set = [i[1] for i in class_list]
 				unique_increase = dfwrapper.get_rate_increase(student_ids)
 
-				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, class_name, period)
+				new_probs = probs.get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, class_name, prev_period, period)
 				for i in range(0, len(new_probs)):
 					all_students[student_ids[i]-1] =  new_probs[i]
 			dfwrapper.update_infection_column(period, all_students)
