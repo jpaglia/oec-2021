@@ -31,9 +31,15 @@ def calculate_base_prob(infected_set):
 
   return base_probability
 
-def update_with_factor(prev_probability, percent_increase):
+def update_with_factor(prev_probability, percent_increase, period):
   # Creates the Bayes interpretation logic
-  new_prob = prev_probability/(prev_probability + (1/percent_increase)*(1-prev_probability))
+  new_percent_increase = percent_increase
+  if period == 2 or period == 4:
+    new_percent_increase += 0.25 # Our additional factor for dirty surfaces
+  if period == 2.5:
+    new_percent_increase += 1
+  
+  new_prob = prev_probability/(prev_probability + (1/new_percent_increase)*(1-prev_probability))
   return new_prob
 
 
@@ -67,7 +73,7 @@ def get_new_class_infection_probs(infected_set, unique_increase, dfwrapper, clas
     if (infected_set[index] == 1.0):
       new_prob = 1.0
     else:
-      new_prob = update_with_factor(base_infection_amount, unique_increase[index])
+      new_prob = update_with_factor(base_infection_amount, unique_increase[index], current_period)
     unique_infection_prob.append(new_prob)
   return unique_infection_prob
 
