@@ -115,7 +115,7 @@ def main():
 		
 	print(current_infections)
 	output_eod = dfwrapper.get_eod_infections()
-	# notify_sms(output_eod, 0.13)
+	notify_sms(output_eod, 0.13)
 
 def create_dataframes():
 	# takes csv file name as arg[1]
