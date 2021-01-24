@@ -86,6 +86,13 @@ class DfWrapper:
 			
 			ta_number = row['TA Number']
 			entire_infection_list.append((ta_number, infection_value, "teaching assistant", row['First Name'], row['Last Name'], row['Phone Number']))
+		
+		for i in entire_infection_list:
+			if i[2] == "student":
+				siblings_list = self.get_siblings(i[0])
+				for i in siblings_list:
+					update_infection_value(studentid, 5, 0.1)
+
 
 		return entire_infection_list
 
