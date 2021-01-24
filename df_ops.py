@@ -87,8 +87,6 @@ class DfWrapper:
 			ta_number = row['TA Number']
 			entire_infection_list.append((ta_number, infection_value, "teaching assistant", row['First Name'], row['Last Name'], row['Phone Number']))
 
-		for i in entire_infection_list:
-
 		return entire_infection_list
 
 	# Get a list of all the classes within a period `period`
